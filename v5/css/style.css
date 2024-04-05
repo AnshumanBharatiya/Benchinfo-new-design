@@ -27,7 +27,7 @@
     --first-color-light: #065143;
     --dark-color: #d48927;
     --dark-color-light: #f49a24;
-     --botton-color:#e9da2d;
+    --botton-color:#e9da2d;
     --botton-color-hover:#938a23;
     --header-bg-color :#02372d ;
     --footer-bg-color : #02372d; */
@@ -52,32 +52,32 @@
     --botton-color:#293432;
     --botton-color-hover:#435a55; 
     --header-bg-color :#48bb78 ;
-    --footer-bg-color : #48bb78;*/
+    --footer-bg-color : #48bb78; */
 
 
     /* 5th color */
-    /* --first-color: #0d9488;
+    --first-color: #0d9488;
     --first-color-light: #5eead4;
     --dark-color: #042f2e;
     --dark-color-light: #115e59; 
     --botton-color:#042f2e;
     --botton-color-hover:#115e59;
     --header-bg-color :#0d9488 ;
-    --footer-bg-color : #0d9488; */
+    --footer-bg-color : #0d9488;
 
-     /* 6th color */
-    --first-color: #ff9900;
+    /* 6th color */
+    /* --first-color: #ff9900;
     --first-color-light: #ffb444;
     --dark-color: #212020;
     --dark-color-light: #333333; 
     --botton-color:#212020;
     --botton-color-hover:#e08600;
     --header-bg-color :#ffffff ;
-    --footer-bg-color : #262626;
+    --footer-bg-color : #262626; */
 
 
-    /* --header-text-color : #ffffff; */
-    --header-text-color : #111111;
+    --header-text-color : #ffffff;
+    /* --header-text-color : #111111; */
 
 
     --color-gray: #555555;
@@ -85,9 +85,12 @@
     --white-color: #F1FAEE;
 
     /*===== Font and typography =====*/
-    /* --body-font: 'Ubuntu', 'Roboto', sans-serif !important; */
+    --body-font: 'Ubuntu', 'Roboto', sans-serif !important;
     /* --body-font:  "Raleway",'Roboto', sans-serif !important; */
-    --body-font:  'Roboto', sans-serif !important;
+    /* --body-font:  'Roboto', sans-serif !important; */
+    /* --body-font:  "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif !important; */
+
+    
     --nav-name-font-size: 1.5rem;
     --normal-font-size: 1.2rem;
     --normal-font-weight : 400;
@@ -214,7 +217,7 @@ h1{
 
 .bottonpage{
     background-color: var(--botton-color);
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 .bottonpage:hover{
@@ -283,13 +286,16 @@ textarea{
 }
 .footer-title {
     color: var(--first-color-light);
+    color: var(--dark-color);
 }
 .footer-texts{
     transition: .5s;
+    /* color: var(--white-color); */
     color: var(--white-color);
 }
 .footer-texts:hover{
-    color: var(--color-gray);
+    /* color: var(--color-gray); */
+    color: var(--dark-color-light);
 }
 
 
@@ -361,7 +367,8 @@ textarea{
 
 .our-terms-policy{
     /* @apply py-14; */
-    @apply py-14 tracking-wider;
+    @apply py-14 ;
+    /* @apply py-14 tracking-wider; */
 }
 .our-terms-policy h4{
     @apply text-xl font-medium text-gray-900 mb-4;
@@ -494,8 +501,8 @@ textarea{
 }
 
 .nav__link:hover {
-    /* color: var(--dark-color-light); */
-    color: var(--first-color);
+    color: var(--dark-color-light);
+    /* color: var(--first-color); */
 }
 
 .dropdown__item a{
