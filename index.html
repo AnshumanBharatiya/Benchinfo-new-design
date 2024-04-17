@@ -22,11 +22,9 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
     </style>
-
 </head>
 
 <body>
@@ -34,9 +32,9 @@
     <div class="container mx-auto sm:container sm:mx-auto">
 
         <!-- Header Part -->
-        <header class="header">
+        <header class="header header_home">
             <a href="#" class="header__logo">
-                <img src="images/logo-new.png" alt="logo-new.png" class="main-logo">
+                <img src="images/logo-new.png" alt="logo-new.png">
             </a>
             <!-- toggle button -->
             <i class='bx bx-menu header__toggle' id="header-toggle"></i>
@@ -44,7 +42,7 @@
                 <div class="nav__content container mx-auto sm:container sm:mx-auto">
                     <a href="index.html" class="nav__perfil">
                         <div class="nav__img">
-                            <img src="images/logo-new.png" alt="logo-new.png" class="main-logo">
+                            <img src="images/logo-new.png" alt="logo-new.png">
                         </div>
                     </a>
 
@@ -56,44 +54,40 @@
                                 <a class="nav__link dropdown__link cursor-pointer">Job Seeker
                                     <i class='bx bx-chevron-down dropdown__icon'></i></a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__item"><a href="register.html" class="nav__link">Register</a>
+                                    <li class="dropdown__item"><a href="register.html" class="drop__link">Register</a>
                                     </li>
-                                    <li class="dropdown__item"><a href="login.html" class="nav__link">Login</a></li>
+                                    <li class="dropdown__item"><a href="login.html" class="drop__link">Login</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav__item dropdown">
-                                <a  class="nav__link dropdown__link cursor-pointer">Bench Sales Recruiter<i
+                                <a class="nav__link dropdown__link cursor-pointer">Bench Sales Recruiter<i
                                         class='bx bx-chevron-down dropdown__icon'></i></a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__item"><a href="register.html" class="nav__link">Register</a>
+                                    <li class="dropdown__item"><a href="register.html" class="drop__link">Register</a>
                                     </li>
-                                    <li class="dropdown__item"><a href="login.html" class="nav__link">Login</a></li>
+                                    <li class="dropdown__item"><a href="login.html" class="drop__link">Login</a></li>
                                 </ul>
                             </li>
                             <li class="nav__item dropdown">
-                                <a  class="nav__link dropdown__link cursor-pointer">Employer<i
+                                <a class="nav__link dropdown__link cursor-pointer">Employer<i
                                         class='bx bx-chevron-down dropdown__icon'></i></a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__item"><a href="employer/register.html"
-                                            class="nav__link">Register</a></li>
-                                    <li class="dropdown__item"><a href="employer/login.html" class="nav__link">Login</a>
+                                            class="drop__link">Register</a></li>
+                                    <li class="dropdown__item"><a href="employer/login.html" class="drop__link">Login</a>
                                     </li>
                                     <li class="dropdown__item"><a href="employer/how_it_works.html"
-                                            class="nav__link">How it Works</a></li>
-                                    <li class="dropdown__item"><a href="employer/login.html" class="nav__link">Priceing
+                                            class="drop__link">How it Works</a></li>
+                                    <li class="dropdown__item"><a href="employer/login.html" class="drop__link">Priceing
                                             Plan</a></li>
                                 </ul>
                             </li>
-                            <li class="nav__item job_post_link"><a href="employer/register.html" class="nav__link">Free
+                            <li class="nav__item job_post_link"><a href="employer/register.html" class="drop__link">Free
                                     Job Post</a></li>
                             <li class="nav__item job_post_button"><a href="employer/register.html"
-                                    class="bottonpage text-white px-3 py-2 rounded transition duration-300">Free Job
+                                    class="bottonpage text-white px-3 py-3 rounded transition duration-300">Free Job
                                     Post</a></li>
-
-                                    <li class="nav__item job_post_button"><a href="employer/register.html"
-                                        class="bottonpage1 text-white px-3 py-3 rounded transition duration-300">Free Job
-                                        Post</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,22 +96,19 @@
 
 
         <section class="text-black body-font lg:px-14 md:px-10  px-2 banner-background">
-            <div class="container mx-auto flex px-5 sm:py-16 py-4 lg:py-28 md:flex-row flex-col-reverse items-center ">
+            <div class="container mx-auto flex px-5 sm:pb-20  md:pb-32 lg:pb-32 sm:pt-24 md:pt-32 lg:pt-32 py-12 md:flex-row flex-col-reverse items-center ">
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pr-2 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-left">
                     <h2 class="title-font sm:text-2xl text-xl font-medium  mb-4">
                         Welcome to BenchInfo
                     </h2>
-
-
                     <h1
-                        class="text-3xl  md:text-3xl lg:text-5xl xl:text-5xl sm:text-3xl   mb-10 sm:mb-6 banner-heading">
+                        class="text-3xl  md:text-3xl lg:text-5xl xl:text-7xl sm:text-3xl   mb-10 sm:mb-6 banner-heading">
                         Find Tech jobs
                         <br class="hidden lg:inline-block">across the US
                     </h1>
                     <h2 class="text-lg md:text-xl lg:text-2xl mb-4">Over 1000+ job postings every day</h2>
-                    <p><a href="https://www.benchinfo.com/seeker/auth/vendor" class="banner-text">Register to receive
-                            all relevant jobs directly to your email</a></p>
+                    <p class="text-lg"><a href="https://www.benchinfo.com/seeker/auth/vendor" class="banner-text">Register to receive all relevant jobs directly to your email</a></p>
                 </div>
                 <!-- <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6 ">
                     <img class="object-cover object-center rounded" alt="hero" src="images/img6.svg">
@@ -130,241 +121,11 @@
             </div>
         </section>
 
+        <!-- how it works -->
+        <section class="text-black body-font">
 
-        <section class="our-terms-policy">
-            <div class="container mx-auto px-4">
-                
-
-
-                <div class="max-w-7xl mx-auto demo1">
-                    <h3 class="text-3xl text-orange-500">COLOR - orange,black, gray1, gray2, black Font Style - Segoe UI(From Microsoft) </h3>
-
-
-
-                    <strong>text size 72 in large, 48px in medimum and 36px in small</strong>
-                    <br>
-                    <h1
-                        class="text-4xl  md:text-4xl lg:text-5xl xl:text-7xl sm:text-4xl   mb-10 sm:mb-6 ">
-                        
-                        <br>
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-
-                    <strong>text size 48px in large, 30px in medium and in small</strong>
-                    <br>
-                    <h1
-                        class="text-3xl  md:text-3xl lg:text-5xl xl:text-5xl sm:text-3xl   mb-10 sm:mb-6 ">
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-
-                    <h4 class="text-gray-600 text-2xl">
-                        text size 24px
-                        <br>Cancellation &amp; Refund Policy</h4>
-                        <br>
-                    <p class="text-xl text-gray-500">
-                        text size 20px
-                        <br>
-                        Refund Policy
-                    </p>
-                    <br>
-                    <p class="text-sm">
-                        text size is here 14px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                    <br>
-                    <p class="text-base">
-                        text size is here 16px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                </div>
-
-                
-
-                <div class="my-16  max-w-7xl mx-auto demo2">
-                     <h3 class="text-3xl text-orange-500">COLOR - orange,black, gray1, gray2, black Font Style - Ubuntu </h3>
-
-
-                     <strong>text size 72 in large, 48px in medimum and 36px in small</strong>
-                     <br>
-                     <h1
-                        class="text-4xl  md:text-4xl lg:text-5xl xl:text-7xl sm:text-4xl   mb-10 sm:mb-6 ">
-                        
-                        <br>
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-
-                    <strong>text size 48px in large, 30px in medium and in small</strong>
-                    <br>
-                    <h1
-                        class="text-3xl  md:text-3xl lg:text-5xl xl:text-5xl sm:text-3xl   mb-10 sm:mb-6 ">
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-                    <h4 class="text-gray-600 text-2xl">
-                        text size 24px
-                        <br>Cancellation &amp; Refund Policy</h4>
-                        <br>
-                    <p class="text-xl text-gray-500">
-                        text size 20px
-                        <br>
-                        Refund Policy
-                    </p>
-                    <br>
-                    <p class="text-sm">
-                        text size is here 14px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                    <br>
-                    <p class="text-base">
-                        text size is here 16px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                </div>
-
-
-
-                <div class="mb-16 max-w-7xl mx-auto demo3">
-                     <h3 class="text-3xl text-orange-500">COLOR - orange,black, gray1, gray2, black Font Style - Roboto </h3>
-
-
-                     <strong>text size 72 in large, 48px in medimum and 36px in small</strong>
-                     <br>
-                     <h1
-                        class="text-4xl  md:text-4xl lg:text-5xl xl:text-7xl sm:text-4xl   mb-10 sm:mb-6 ">
-                        
-                        <br>
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-
-                    <strong>text size 48px in large, 30px in medium and in small</strong>
-                    <br>
-                    <h1
-                        class="text-3xl  md:text-3xl lg:text-5xl xl:text-5xl sm:text-3xl   mb-10 sm:mb-6 ">
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-                    <h4 class="text-gray-600 text-2xl">
-                        text size 24px
-                        <br>Cancellation &amp; Refund Policy</h4>
-                        <br>
-                    <p class="text-xl text-gray-500">
-                        text size 20px
-                        <br>
-                        Refund Policy
-                    </p>
-                    <br>
-                    <p class="text-sm">
-                        text size is here 14px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                    <br>
-                    <p class="text-base">
-                        text size is here 16px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                </div>
-
-
-                <div class="max-w-7xl mx-auto demo4">
-                     <h3 class="text-3xl text-orange-500">COLOR - orange,black, gray1, gray2, black Font Style - Raleway </h3>
-
-
-                     <strong>text size 72 in large, 48px in medimum and 36px in small</strong>
-                     <br>
-                     <h1
-                        class="text-4xl  md:text-4xl lg:text-5xl xl:text-7xl sm:text-4xl   mb-10 sm:mb-6 ">
-                        
-                        <br>
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-
-                    <strong>text size 48px in large, 30px in medium and in small</strong>
-                    <br>
-                    <h1
-                        class="text-3xl  md:text-3xl lg:text-5xl xl:text-5xl sm:text-3xl   mb-10 sm:mb-6 ">
-                        Find Tech jobs
-                        <br class="hidden lg:inline-block">across the US
-                    </h1>
-                    <h4 class="text-gray-600 text-2xl">
-                        text size 24px
-                        <br>Cancellation &amp; Refund Policy</h4>
-                        <br>
-                    <p class="text-xl text-gray-500">
-                        text size 20px
-                        <br>
-                        Refund Policy
-                    </p>
-                    <br>
-                    <p class="text-sm">
-                        text size is here 14px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                    <br>
-                    <p class="text-base">
-                        text size is here 16px
-                        <br>
-                        Under no circumstances the payment made to REDACT IT CONSULTING PRIVATE LIMITED. for publishing
-                        any job advertisement on this job portal <a href="www.benchinfo.com">www.benchinfo.com</a>, will
-                        not be refunded. Because we've already given you 14 days to try our service. And you should buy
-                        our service after trying 14 days. Hope you understand. If you've any query regarding refund,
-                        then you can contact our support team by <a
-                            href="mailto:support@mail.benchinfo.com">support@mail.benchinfo.com</a>.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="text-gray-600 body-font mt-24">
-
-            <div class="flex flex-col text-center w-full mb-10">
-                <h1 class="sm:text-3xl text-2xl font-semibold title-font text-gray-900">How It Works?</h1>
+            <div class="flex flex-col text-center w-full lg:my-14 md:my-10 sm:my-10 my-0 mb-12">
+                <h1 class="sm:text-3xl text-2xl font-semibold title-font text-black">How It Works?</h1>
             </div>
 
             <div class="container px-5 py-2 mx-auto flex flex-wrap md:flex-row flex-col items-center">
@@ -373,15 +134,15 @@
                 </div>
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Job Seeker
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Job Seeker
                     </h1>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Register with Benchinfo</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Add your Resume and Skills</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Get all relevant jobs directly to your email</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Also view and apply jobs on portal</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Register with Benchinfo</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Add your Resume and Skills</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Get all relevant jobs directly to your email</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Also view and apply jobs on portal</p>
 
                     <button type="button"
-                        class="text-white bottonpage font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 my-4 ">Register
+                        class="text-white bottonpage font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 my-4 ">Register
                         as Job Seeker
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 me-2" viewBox="0 0 24 24">
@@ -396,16 +157,16 @@
                 <!-- lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center -->
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 flex flex-col lg:items-end lg:text-right md:items-start md:text-left sm:items-center sm:text-center items-center text-center">
-                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Bench Sales Recruiter
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Bench Sales Recruiter
                     </h1>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Register with Benchinfo</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Add any number of consultants and their skills
+                    <p class="leading-relaxed  text-base text-gray-600">Register with Benchinfo</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Add any number of consultants and their skills
                     </p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Get all relevant jobs directly to your email</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Also view and apply jobs on portal</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Get all relevant jobs directly to your email</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Also view and apply jobs on portal</p>
 
                     <button type="button"
-                        class="text-white bottonpage font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 my-4">Register
+                        class="text-white bottonpage font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 my-4">Register
                         as Sales Recruiter
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 me-2" viewBox="0 0 24 24">
@@ -426,15 +187,15 @@
                 </div>
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Employer
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Employer
                     </h1>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Register with Benchinfo</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Post unlimited free jobs</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Seemless posting through email</p>
-                    <p class="leading-relaxed  lg:text-base sm:text-base">Your job is directly sent to relevant inbox</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Register with Benchinfo</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Post unlimited free jobs</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Seemless posting through email</p>
+                    <p class="leading-relaxed  text-base text-gray-600">Your job is directly sent to relevant inbox</p>
 
                     <button type="button"
-                        class="text-white bottonpage font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2  my-4">Register
+                        class="text-white bottonpage font-medium rounded-lg text-base px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2  my-4">Register
                         as Employer
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 me-2" viewBox="0 0 24 24">
@@ -447,21 +208,21 @@
 
         </section>
 
-
+        <!-- how it works -->
         <section class="text-gray-600 body-font ">
 
             <div class="flex flex-col text-center w-full  my-16 ">
-                <h1 class="sm:text-3xl text-2xl font-semibold title-font text-gray-900">How It Works?</h1>
+                <h1 class="sm:text-3xl text-2xl font-semibold title-font text-black">How It Works?</h1>
             </div>
 
             <div class="container px-5 py-4 mx-auto flex flex-wrap">
                 <div class="flex flex-wrap w-full md:flex-row flex-col-reverse">
                     <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Job Seeker
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Job Seeker
                         </h1>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -470,14 +231,14 @@
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 1</h2>
-                                <p class="leading-relaxed">Register with Benchinfo</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 1</h2>
+                                <p class="leading-relaxed text-gray-600">Register with Benchinfo</p>
                             </div>
                         </div>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -486,14 +247,14 @@
                                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 2</h2>
-                                <p class="leading-relaxed">Add your Resume and Skills.</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 2</h2>
+                                <p class="leading-relaxed text-gray-600">Add your Resume and Skills.</p>
                             </div>
                         </div>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -503,28 +264,12 @@
                                     <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 3</h2>
-                                <p class="leading-relaxed">Get all relevant jobs directly to your email</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 3</h2>
+                                <p class="leading-relaxed text-gray-600">Get all relevant jobs directly to your email</p>
                             </div>
                         </div>
-                        <!-- <div class="flex relative pb-12">
-                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                                </div>
-                                <div
-                                    class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg>
-                                </div>
-                                <div class="flex-grow pl-4">
-                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                    <p class="leading-relaxed"></p>
-                                </div>
-                            </div> -->
+                        
                         <div class="flex relative">
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -534,9 +279,9 @@
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                <p class="leading-relaxed">Also view and apply jobs on portal</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 4</h2>
+                                <p class="leading-relaxed text-gray-600">Also view and apply jobs on portal</p>
                             </div>
                         </div>
                     </div>
@@ -554,11 +299,11 @@
                     </div>
                     <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Bench Sales Recruiter
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Bench Sales Recruiter
                         </h1>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -567,14 +312,14 @@
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 1</h2>
-                                <p class="leading-relaxed">Register with Benchinfo</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 1</h2>
+                                <p class="leading-relaxed text-gray-600">Register with Benchinfo</p>
                             </div>
                         </div>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -583,14 +328,14 @@
                                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 2</h2>
-                                <p class="leading-relaxed">Add any number of consultants and their skills</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 2</h2>
+                                <p class="leading-relaxed text-gray-600">Add any number of consultants and their skills</p>
                             </div>
                         </div>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -600,29 +345,12 @@
                                     <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 3</h2>
-                                <p class="leading-relaxed">Get all relevant jobs directly to your email</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 3</h2>
+                                <p class="leading-relaxed text-gray-600">Get all relevant jobs directly to your email</p>
                             </div>
                         </div>
-                        <!-- <div class="flex relative pb-12">
-                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                                </div>
-                                <div
-                                    class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg>
-                                </div>
-                                <div class="flex-grow pl-4">
-                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                                        Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                                </div>
-                            </div> -->
+                        
                         <div class="flex relative">
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -632,9 +360,9 @@
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                <p class="leading-relaxed">Also view and apply jobs on portal</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 4</h2>
+                                <p class="leading-relaxed text-gray-600">Also view and apply jobs on portal</p>
                             </div>
                         </div>
                     </div>
@@ -645,11 +373,11 @@
                 <div class="flex flex-wrap w-full md:flex-row flex-col-reverse">
 
                     <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Employer
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Employer
                         </h1>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -658,14 +386,14 @@
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 1</h2>
-                                <p class="leading-relaxed">Register with Benchinfo</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 1</h2>
+                                <p class="leading-relaxed text-gray-600">Register with Benchinfo</p>
                             </div>
                         </div>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -674,14 +402,14 @@
                                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 2</h2>
-                                <p class="leading-relaxed">Post unlimited free jobs</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 2</h2>
+                                <p class="leading-relaxed text-gray-600">Post unlimited free jobs</p>
                             </div>
                         </div>
                         <div class="flex relative pb-12">
                             <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
                             </div>
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -691,29 +419,12 @@
                                     <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 3</h2>
-                                <p class="leading-relaxed">Seemless posting through email</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 3</h2>
+                                <p class="leading-relaxed text-gray-600">Seemless posting through email</p>
                             </div>
                         </div>
-                        <!-- <div class="flex relative pb-12">
-                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                                </div>
-                                <div
-                                    class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg>
-                                </div>
-                                <div class="flex-grow pl-4">
-                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                                        Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                                </div>
-                            </div> -->
+                       
                         <div class="flex relative">
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
@@ -723,9 +434,9 @@
                                     <path d="M22 4L12 14.01l-3-3"></path>
                                 </svg>
                             </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4</h2>
-                                <p class="leading-relaxed">Your job is directly sent to relevant inbox</p>
+                            <div class="flex-grow pl-4 text-base">
+                                <h2 class="font-medium title-font text-black mb-1 tracking-wider">STEP 4</h2>
+                                <p class="leading-relaxed text-gray-600">Your job is directly sent to relevant inbox</p>
                             </div>
                         </div>
                     </div>
@@ -738,23 +449,16 @@
         </section>
 
 
-
-
-
-
-
-
-
     </div>
 
     <!-- footer -->
     <footer class=" body-font footers-color">
         <div
-            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 
             <div class="flex-grow flex flex-wrap -mb-10 md:text-left  sm:text-left order-first">
                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">For Job Seeker</h2>
+                    <h2 class=" footer-title text-black font-bold  mb-3">For Job Seeker</h2>
                     <nav class="list-none mb-10">
                         <li>
                             <a class="footer-texts cursor-pointer">Register</a>
@@ -766,7 +470,7 @@
                     </nav>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">For Bench Sales</h2>
+                    <h2 class=" footer-title text-black font-bold  mb-3">For Bench Sales</h2>
                     <nav class="list-none mb-10">
                         <li>
                             <a class="footer-texts cursor-pointer">Register</a>
@@ -778,7 +482,7 @@
                     </nav>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">For Employers</h2>
+                    <h2 class=" footer-title text-black font-bold  mb-3">For Employers</h2>
                     <nav class="list-none mb-10">
                         <li>
                             <a class="footer-texts cursor-pointer">Register</a>
@@ -795,15 +499,15 @@
                     </nav>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">Contact Us</h2>
-                    <nav class="list-none mb-10">
+                    <h2 class=" footer-title text-black font-bold  mb-3">Contact Us</h2>
+                    <nav class="list-none mb-8">
                         <li>
                             <a class="footer-texts cursor-pointer">
                                 <i class="fa fa-calendar" aria-hidden="true"></i> (Monday-Friday, 9am to 6pm EST)</a>
                         </li>
                         <li>
                             <a class="footer-texts cursor-pointer">
-                                <i class="fa fa-mobile" aria-hidden="true"></i> +1 302 804 2112</a>
+                                <i class="fa fa-phone-square" aria-hidden="true"></i> +1 302 804 2112</a>
                         </li>
                         <li>
 
@@ -811,14 +515,36 @@
                                 <i class="fa fa-envelope-open" aria-hidden="true"></i> support@mail.benchinfo.com</a>
                         </li>
 
+                        <!-- social_icon -->
+                        <li>
+                            <a title="Connect on Whatsapp" target="blank"><i class="fa fa-whatsapp fa-2x"
+                                aria-hidden="true"></i></a>
+
+                            <a href="https://www.linkedin.com/company/benchinfo/about/" title="Connect on linkedin"
+                                    target="blank" class="px-2"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        </li>
+
                     </nav>
+                    <!-- social_icon -->
+                    <!-- <div class="social_icon">                        
+                        <ul>
+                            <li>
+                                <a title="Connect on Whatsapp" target="blank"><i class="fa fa-whatsapp"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/benchinfo/about/" title="Connect on linkedin"
+                                    target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <div class="bg-gray-100">
+        <div class= "text-gray-600">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Benchinfo —
-                    <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@BenchInfO</a>
+                <p class=" text-base text-center sm:text-left">© 2024 Benchinfo —
+                    <a href="" rel="noopener noreferrer" class="font-medium ml-1" target="_blank">@BenchInfO</a>
                 </p>
                 <span class="block sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                     <a href="privacypolicy.html">Privacy
@@ -834,7 +560,7 @@
     <div class="scrollTop" onclick="scrollyToTop()"></div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

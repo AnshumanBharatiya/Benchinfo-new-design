@@ -22,20 +22,17 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
     </style>
-
-
 </head>
 
 <body>
     <div class="preloader"></div>
     <div class="container mx-auto sm:container sm:mx-auto">
 
-         <!-- Header Part -->
-         <header class="header">
+        <!-- Header Part -->
+        <header class="header header_home">
             <a href="#" class="header__logo">
                 <img src="images/logo-new.png" alt="logo-new.png">
             </a>
@@ -54,42 +51,42 @@
                             <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
 
                             <li class="nav__item dropdown">
-                                <a class="nav__link dropdown__link">Job Seeker
+                                <a class="nav__link dropdown__link cursor-pointer">Job Seeker
                                     <i class='bx bx-chevron-down dropdown__icon'></i></a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__item"><a href="register.html" class="nav__link">Register</a>
+                                    <li class="dropdown__item"><a href="register.html" class="drop__link">Register</a>
                                     </li>
-                                    <li class="dropdown__item"><a href="login.html" class="nav__link">Login</a></li>
+                                    <li class="dropdown__item"><a href="login.html" class="drop__link">Login</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav__item dropdown">
-                                <a href="#" class="nav__link dropdown__link">Bench Sales Recruiter<i
+                                <a class="nav__link dropdown__link cursor-pointer">Bench Sales Recruiter<i
                                         class='bx bx-chevron-down dropdown__icon'></i></a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__item"><a href="register.html" class="nav__link">Register</a>
+                                    <li class="dropdown__item"><a href="register.html" class="drop__link">Register</a>
                                     </li>
-                                    <li class="dropdown__item"><a href="login.html" class="nav__link">Login</a></li>
+                                    <li class="dropdown__item"><a href="login.html" class="drop__link">Login</a></li>
                                 </ul>
                             </li>
                             <li class="nav__item dropdown">
-                                <a href="#" class="nav__link dropdown__link">Employer<i
+                                <a class="nav__link dropdown__link cursor-pointer">Employer<i
                                         class='bx bx-chevron-down dropdown__icon'></i></a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__item"><a href="employer/register.html"
-                                            class="nav__link">Register</a></li>
-                                    <li class="dropdown__item"><a href="employer/login.html" class="nav__link">Login</a>
+                                            class="drop__link">Register</a></li>
+                                    <li class="dropdown__item"><a href="employer/login.html" class="drop__link">Login</a>
                                     </li>
                                     <li class="dropdown__item"><a href="employer/how_it_works.html"
-                                            class="nav__link">How it Works</a></li>
-                                    <li class="dropdown__item"><a href="employer/login.html" class="nav__link">Priceing
+                                            class="drop__link">How it Works</a></li>
+                                    <li class="dropdown__item"><a href="employer/login.html" class="drop__link">Priceing
                                             Plan</a></li>
                                 </ul>
                             </li>
-                            <li class="nav__item job_post_link"><a href="employer/register.html" class="nav__link">Free
+                            <li class="nav__item job_post_link"><a href="employer/register.html" class="drop__link">Free
                                     Job Post</a></li>
                             <li class="nav__item job_post_button"><a href="employer/register.html"
-                                    class="bottonpage text-white p-4 rounded transition duration-300">Free Job
+                                    class="bottonpage text-white px-3 py-3 rounded transition duration-300">Free Job
                                     Post</a></li>
                         </ul>
                     </div>
@@ -117,7 +114,7 @@
                         <path d="m9 18 6-6-6-6" />
                     </svg>
                 </li>
-                <li class="inline-flex items-center text-sm font-semibold text-gray-800 truncate" aria-current="page">
+                <li class="inline-flex items-center text-base font-medium text-gray-600 truncate" aria-current="page">
                     Cancellation & Refund Policy
                 </li>
             </ol>
@@ -164,75 +161,97 @@
     <!-- footer -->
     <footer class=" body-font footers-color">
         <div
-            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 
-            <div class="flex-grow flex flex-wrap -mb-10 md:text-left  sm:text-left order-first">
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">For Job Seeker</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="footer-texts cursor-pointer">Register</a>
-                        </li>
-                        <li>
-                            <a class="footer-texts cursor-pointer">Login</a>
-                        </li>
+        <div class="flex-grow flex flex-wrap -mb-10 md:text-left  sm:text-left order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class=" footer-title text-black font-bold  mb-3">For Job Seeker</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="footer-texts cursor-pointer">Register</a>
+                    </li>
+                    <li>
+                        <a class="footer-texts cursor-pointer">Login</a>
+                    </li>
 
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">For Bench Sales</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="footer-texts cursor-pointer">Register</a>
-                        </li>
-                        <li>
-                            <a class="footer-texts cursor-pointer">Login</a>
-                        </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class=" footer-title text-black font-bold  mb-3">For Bench Sales</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="footer-texts cursor-pointer">Register</a>
+                    </li>
+                    <li>
+                        <a class="footer-texts cursor-pointer">Login</a>
+                    </li>
 
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">For Employers</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="footer-texts cursor-pointer">Register</a>
-                        </li>
-                        <li>
-                            <a class="footer-texts cursor-pointer">Login</a>
-                        </li>
-                        <li>
-                            <a class="footer-texts cursor-pointer">How it Works</a>
-                        </li>
-                        <li>
-                            <a class="footer-texts cursor-pointer">Pricing Plans</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font footer-title tracking-widest font-bold text-sm mb-3">Contact Us</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="footer-texts cursor-pointer">
-                                <i class="fa fa-calendar" aria-hidden="true"></i> (Monday-Friday, 9am to 6pm EST)</a>
-                        </li>
-                        <li>
-                            <a class="footer-texts cursor-pointer">
-                                <i class="fa fa-mobile" aria-hidden="true"></i> +1 302 804 2112</a>
-                        </li>
-                        <li>
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class=" footer-title text-black font-bold  mb-3">For Employers</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="footer-texts cursor-pointer">Register</a>
+                    </li>
+                    <li>
+                        <a class="footer-texts cursor-pointer">Login</a>
+                    </li>
+                    <li>
+                        <a class="footer-texts cursor-pointer">How it Works</a>
+                    </li>
+                    <li>
+                        <a class="footer-texts cursor-pointer">Pricing Plans</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class=" footer-title text-black font-bold  mb-3">Contact Us</h2>
+                <nav class="list-none mb-8">
+                    <li>
+                        <a class="footer-texts cursor-pointer">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> (Monday-Friday, 9am to 6pm EST)</a>
+                    </li>
+                    <li>
+                        <a class="footer-texts cursor-pointer">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i> +1 302 804 2112</a>
+                    </li>
+                    <li>
 
-                            <a class="footer-texts cursor-pointer">
-                                <i class="fa fa-envelope-open" aria-hidden="true"></i> support@mail.benchinfo.com</a>
-                        </li>
+                        <a class="footer-texts cursor-pointer">
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i> support@mail.benchinfo.com</a>
+                    </li>
 
-                    </nav>
-                </div>
+                    <!-- social_icon -->
+                    <li>
+                        <a title="Connect on Whatsapp" target="blank"><i class="fa fa-whatsapp fa-2x"
+                            aria-hidden="true"></i></a>
+
+                        <a href="https://www.linkedin.com/company/benchinfo/about/" title="Connect on linkedin"
+                                target="blank" class="px-2"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    </li>
+
+                </nav>
+                <!-- social_icon -->
+                <!-- <div class="social_icon">                        
+                    <ul>
+                        <li>
+                            <a title="Connect on Whatsapp" target="blank"><i class="fa fa-whatsapp"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/benchinfo/about/" title="Connect on linkedin"
+                                target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div> -->
             </div>
         </div>
-        <div class="bg-gray-100">
+        </div>
+        <div class= "text-gray-600">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Benchinfo —
-                    <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@BenchInfO</a>
+                <p class=" text-base text-center sm:text-left">© 2024 Benchinfo —
+                    <a href="" rel="noopener noreferrer" class="font-medium ml-1" target="_blank">@BenchInfO</a>
                 </p>
                 <span class="block sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                     <a href="privacypolicy.html">Privacy
