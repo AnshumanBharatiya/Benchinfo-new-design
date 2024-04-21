@@ -125,7 +125,7 @@
     right: 40px;
     width: 40px;
     height: 40px;
-    background:  url("../images/arrows.png");
+    background: var(--first-color) url("../images/arrows.png");
     border-radius: 50%;
     border: 1px;
     box-shadow: 0 0 3px 1px rgba(50, 50, 50,1);
@@ -474,7 +474,7 @@ textarea{
 }
 .user-registaer-image{
     background-image: url('../images/signup1.svg');
-    opacity: .1;
+    /* opacity: .1; */
 }
 
 .emp-registaer-image{
@@ -845,9 +845,10 @@ textarea{
         font-size: 0.9rem;
     }
     .dropdown__menu {
-      
         margin: 0px 0px 0px -3px;
-        
+    }
+    .inherit-width{
+        width: inherit;
     }
 }
 
@@ -865,6 +866,9 @@ textarea{
     }
     .dropdown__menu {
         margin: 0px 0px 0px -6px;   
+    }
+    .inherit-width{
+        width: inherit;
     }
 }
 
