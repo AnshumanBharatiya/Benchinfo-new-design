@@ -514,6 +514,10 @@ textarea{
 }
 
 
+.top-jobpick{
+    width: 60%;
+}
+
 
 
   /* Custom Multi Select */
@@ -747,8 +751,13 @@ textarea{
         padding: 20px 5px;
     }
     /*===== NAV END MOBILE VIEW=====*/
-  
+    .top-jobpick{
+        width: 97%;
+    }
 
+    .pagination{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -775,7 +784,7 @@ textarea{
     .our-terms-policy p{
         @apply text-sm;
     }
-
+    
 
 }
 @media screen and (max-width: 410px) {
@@ -899,10 +908,14 @@ textarea{
         margin: calc(var(--header-height) + 1rem) 0 0 0px;
         padding: 20px 10px;
     }
-   
+    
 }
 
 @media screen and (min-width: 810px) {
+
+    .pagination{
+        width: 50%;
+    }
     body {
         margin: 0;
     }
@@ -1016,8 +1029,7 @@ textarea{
         justify-content: space-between;
         align-items: center;
     }
-
-
+    
 
 }
 
@@ -1039,6 +1051,12 @@ textarea{
     .inherit-width{
         width: inherit;
     }
+    .top-jobpick{
+        width: 72%;
+    }
+    .pagination{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1025px) {
@@ -1059,6 +1077,7 @@ textarea{
     .inherit-width{
         width: inherit;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
