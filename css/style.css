@@ -267,6 +267,8 @@ textarea{
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+
 .header__toggle {
     font-size: 1.5rem;
     cursor: pointer;
@@ -484,11 +486,198 @@ textarea{
 /* end login and register image */
 
 
-/* start admin panel css */
+/* start admin and user portal panel css */
 .leftsidebar{
-    margin-top: 3.5rem;
+    background: var(--dark-white);
 }
-/* end admin panel css */
+.user-portal-drop-down{
+    background: var(--dark-white);
+}
+
+.user-portal-header-text{
+    @apply pr-4 text-white text-base;
+}
+.dropdown_user{
+    background: var(--user-first-color);
+}
+
+.job-s-card{
+    transition: .3s;    
+}
+
+.activemenu,
+.job-s-card:hover,
+.job-s-card:focus,
+.job-s-card:active{
+   /* border-left: 2px solid #003878; */
+   box-shadow : 2px 0 0 #003878 inset;
+}
+
+
+
+
+  /* Custom Multi Select */
+  /* .sd-multiSelect {
+    position: relative;
+  } */
+  /* .sd-multiSelect .placeholder { */
+    /* opacity: 1; */
+    /* background-color: transparent; */
+    /* cursor: pointer; */
+  /* } */
+  /* .sd-multiSelect .ms-offscreen {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    overflow: hidden;
+    display: none;
+  } */
+  
+  .sd-multiSelect .sd-CustomSelect {
+    width: 100% !important;
+  }
+    /* .sd-multiSelect .sd-CustomSelect:focus,
+    .sd-multiSelect .sd-CustomSelect:active,
+    .sd-multiSelect .sd-CustomSelect:hover { */
+    /* outline: #0059be;
+      outline-style: dashed; */
+        /* outline-width :.8px; */
+        /* outline-color: rgb(59, 130, 246)!important; */
+    /* } */
+  
+  /* .sd-multiSelect .ms-choice {
+    position: relative;
+    text-align: left !important;
+    width: 100%;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .sd-multiSelect .ms-choice:after {
+    content: "\f107 ";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-weight: bold;
+    transform: translateY(-50%);
+    font-size: 18px;
+  }
+   */
+  /* .sd-multiSelect .ms-choice:focus {
+    border-color: #0059be;
+  } */
+  
+  /* .sd-multiSelect .ms-drop.bottom {
+    display: none;
+    background: #fff;
+    border: 1px solid ;
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+    padding: 10px 8px;
+    margin-top: 10px;
+  }
+  
+  .sd-multiSelect .ms-drop li {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
+  .sd-multiSelect .ms-drop li input[type="checkbox"] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .sd-multiSelect .ms-drop li label {
+    cursor: pointer;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .sd-multiSelect .ms-drop li label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(59, 130, 246);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 4px;
+  }
+  
+  .sd-multiSelect .ms-drop li input:checked + span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: rgb(59, 130, 246);
+    border-width: 0 2px 2px 0;
+  } */
+
+  
+  /* ****************** */
+
+
+  .relocation{
+	max-width: 100%;
+	width: 350px;
+}
+
+.relocation{
+	max-width: 100%;
+	width: 350px;
+}
+.vscomp-toggle-button{
+	padding: 0px!important;
+	border-radius: 0px!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-family: var(--body-font)!important;
+    color: #000!important;
+    cursor:inherit;
+}
+.vscomp-wrapper:not(.has-value) .vscomp-value {
+    opacity: 1!important;
+}
+.vscomp-arrow::after {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)!important;
+}
+
+.vscomp-toggle-button:hover{
+    border: none!important;
+    box-shadow: none!important;
+}
+.vscomp-wrapper{
+    color: #000!important;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--body-font)!important;
+}
+.vscomp-option.focused{
+    background-color: rgb(29, 78, 216)!important;
+    color: #fff!important;
+}
+.pop-comp-wrapper{
+    box-shadow: none!important;
+    border-width: 2px;
+}
+
+/* end admin and user portal panel css */
 
 
 @media screen and (max-width: 810px) {
@@ -574,6 +763,9 @@ textarea{
         line-height: calc(35px - 10px);
         font-size:17px;
     }
+    .user-portal-header-text{
+        display: none;
+    }
     .nav{
         padding-top: 0;
     }
@@ -583,9 +775,6 @@ textarea{
     .our-terms-policy p{
         @apply text-sm;
     }
-    .leftsidebar{
-        margin-top: 2.5rem;
-    }
 
 
 }
@@ -593,9 +782,6 @@ textarea{
     :root {
         --nav-name-font-size: 1rem;
         --normal-font-size: 1rem;
-    }
-    .leftsidebar{
-        margin-top: 2rem;
     }
 
 }
@@ -730,6 +916,9 @@ textarea{
         display: none;
     }
     .job_post_link{
+        display: none;
+    }
+    .resume_add{
         display: none;
     }
     .nav {

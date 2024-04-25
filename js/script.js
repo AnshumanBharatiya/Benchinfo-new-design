@@ -46,3 +46,21 @@ function linkAction(){
   this.classList.add('active');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+
+// multi select drop down
+
+// $(document).ready(function() {
+//     $(".sd-CustomSelect").multipleSelect({
+//         selectAll: false,
+//         onOptgroupClick: function(view) {
+//         $(view).parents("label").addClass("selecte-optgroup");
+//         }
+//     });
+// });
+
+
+VirtualSelect.init({ 
+    ele: '#relocation' 
+});
