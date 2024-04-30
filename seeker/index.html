@@ -39,7 +39,7 @@
                     <a href="index.html" class="flex ms-2 md:me-24">
                         <img src="../images/header-logo.png" class="me-3" alt="FlowBite Logo" />
                     </a>
-                    <a href="index.html" class="user-portal-header-text">Post Jobs</a>
+                    <a href="index.html" class="user-portal-header-text">Jobs</a>
                     <a href="benchlist.html" class="user-portal-header-text">Add Resumes / Job Alerts</a>
                 </div>
                 <div class="flex ustify-around">
@@ -70,20 +70,24 @@
                             <ul class="py-1 px-4" role="none">
                                 <li>
                                     <i class="fa fa-file-text" aria-hidden="true"></i>
-                                    <a href="benchlist.html" class="px-2 py-1 text-base text-black" role="menuitem">Resume</a>
+                                    <a href="benchlist.html" class="px-2 py-1 text-base text-black"
+                                        role="menuitem">Resume</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-user " aria-hidden="true"></i>
-                                    <a href="profile.html" class="px-2 py-1 text-base text-black" role="menuitem">Profile</a>
+                                    <a href="profile.html" class="px-2 py-1 text-base text-black"
+                                        role="menuitem">Profile</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-unlock-alt " aria-hidden="true"></i>
-                                    <a href="change_password.html" class="px-2 py-1 text-base text-black" role="menuitem">Change
+                                    <a href="change_password.html" class="px-2 py-1 text-base text-black"
+                                        role="menuitem">Change
                                         Password</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <a href="change_email.html" class="px-2 py-1 text-base text-black" role="menuitem">Change
+                                    <a href="change_email.html" class="px-2 py-1 text-base text-black"
+                                        role="menuitem">Change
                                         Email</a>
                                 </li>
                                 <li>
@@ -97,7 +101,7 @@
             </div>
         </div>
     </nav>
-    
+
 
     <aside id="logo-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full border-r border-gray-300 sm:translate-x-0 leftsidebar"
@@ -106,13 +110,12 @@
             <div id="dropdown-cta" class="p-4 mt-2 mb-4 rounded-lg bg-blue-100 " role="alert">
                 <div class="flex items-center mb-3">
                     <img class="w-12 h-w-12 " src="../images/portal-images/working2.png" alt="user photo">
-                    
+
                     <button type="button"
                         class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
                         data-dismiss-target="#dropdown-cta" aria-label="Close">
                         <span class="sr-only">Close</span>
-                        <svg class="w-2.5 h-2.5" aria-hidden="true"  fill="none"
-                            viewBox="0 0 14 14">
+                        <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                         </svg>
@@ -178,7 +181,7 @@
                 </li>
 
 
-                <li class="resume_add"> 
+                <li class="resume_add">
                     <a href="#" class="flex items-center p-2 text-black    group">
                         <i class="fa fa-file-text" aria-hidden="true"></i>
                         <span class="flex-1 ms-3 whitespace-nowrap">Add Resumes/Job Alerts</span>
@@ -203,53 +206,70 @@
                 <form class="max-w-2xl mx-auto">
                     <div class="flex">
                         <!-- <label for="search-dropdown" class="mb-2 text-base font-normal text-black sr-only ">Your Email</label> -->
-                        <button id="dropdown-location" data-dropdown-toggle="location" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-base font-normal text-center text-black  border border-gray-300 rounded-s-lg focus:outline-none" type="button">Location 
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"  fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        <button id="dropdown-location" data-dropdown-toggle="location"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-base font-normal text-center text-black  border border-gray-300 rounded-s-lg focus:outline-none"
+                            type="button">Location
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
                         <div id="location" class="z-10 hidden bg-white divide-y divide-gray-300  border min-w-24 ">
                             <ul class=" text-base text-gray-700 " aria-labelledby="dropdown-location">
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">USA</button>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">USA</button>
                                 </li>
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">UK</button>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">UK</button>
                                 </li>
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">INDIA</button>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">INDIA</button>
                                 </li>
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">Texas City TX </button>
+                                    <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">Texas
+                                        City TX </button>
                                 </li>
                             </ul>
                         </div>
-    
-                        <button id="dropdown-experience" data-dropdown-toggle="exprience" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none" type="button">Experience 
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"  fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+
+                        <button id="dropdown-experience" data-dropdown-toggle="exprience"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none"
+                            type="button">Experience
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
                         <div id="exprience" class="z-10 hidden bg-white divide-y divide-gray-300  border w-32">
                             <ul class=" text-base text-gray-700 " aria-labelledby="dropdown-experience">
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">1</button>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">1</button>
                                 </li>
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">2</button>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">2</button>
                                 </li>
                                 <li>
-                                    <button type="button" class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">3</button>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">3</button>
                                 </li>
                             </ul>
                         </div>
-                       
+
                         <div class="relative w-full">
-                            <input type="text" id="search-dropdown" class="block p-2.5 w-full z-20 text-base text-black  rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 outline-none" placeholder="Search skils | designation | companies" required />
-    
-                            <button type="submit" class="absolute top-0 end-0 p-2.5 text-base font-normal h-full text-white bg-blue-600 rounded-e-lg border    outline-none">
-                                <svg class="w-4 h-4" aria-hidden="true"  fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            <input type="text" id="search-dropdown"
+                                class="block p-2.5 w-full z-20 text-base text-black  rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 outline-none"
+                                placeholder="Search skils | designation | companies" required />
+
+                            <button type="submit"
+                                class="absolute top-0 end-0 p-2.5 text-base font-normal h-full text-white bg-blue-600 rounded-e-lg border    outline-none">
+                                <svg class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
                                 <span class="sr-only">Search</span>
                             </button>
@@ -259,16 +279,27 @@
             </div>
         </nav>
         <!-- search bar end -->
-        
+
+
+
+
         <!-- all jobs and its description -->
         <div class="mt-14 py-4 px-2 pt-16">
+
+
+
+
             <!-- all content -->
             <div class="grid grid-cols-1 relative pt-3">
                 <div class=" w-5/12 ">
-                  
-                    <div class="flex lg:flex-row flex-col ">
+
+                    <div class="flex relative md:flex-row flex-col">
+
+
+
+
                         <div class="w-full border">
-                            <!-- center div for all jobs --> 
+                            <!-- center div for all jobs -->
                             <div class="relative w-full">
                                 <div class="fixed bg-blue-600 flex flex-col p-4 top-jobpick">
                                     <p class="font-medium text-lg text-white">Top job picks for you</p>
@@ -280,16 +311,19 @@
                             <div class="pt-20">
 
 
-                                <div id="dropdown-cta1" class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card activemenu" role="alert">
+                                <div id="dropdown-cta1"
+                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card activemenu"
+                                    role="alert">
                                     <div class="flex items-center mb-2">
-                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant | Remote</h3>
+                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
+                                            Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
                                             data-dismiss-target="#dropdown-cta1" aria-label="Close">
                                             <span class="sr-only">Close</span>
-                                            <svg class="w-2.5 h-2.5" aria-hidden="true"  fill="none"
-                                                viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
                                                     d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                             </svg>
                                         </button>
@@ -299,7 +333,8 @@
                                     </p>
 
                                     <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru, Karnataka, India</span>
+                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                            Karnataka, India</span>
                                         <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
@@ -307,19 +342,21 @@
                                     </p>
                                     <p class="mb-1 text-base text-gray-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
-                                    </p> 
+                                    </p>
                                 </div>
-                                
-                                <div id="dropdown-cta2" class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+
+                                <div id="dropdown-cta2"
+                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
-                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant | Remote</h3>
+                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
+                                            Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
                                             data-dismiss-target="#dropdown-cta2" aria-label="Close">
                                             <span class="sr-only">Close</span>
-                                            <svg class="w-2.5 h-2.5" aria-hidden="true"  fill="none"
-                                                viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
                                                     d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                             </svg>
                                         </button>
@@ -329,7 +366,8 @@
                                     </p>
 
                                     <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru, Karnataka, India</span>
+                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                            Karnataka, India</span>
                                         <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
@@ -337,20 +375,22 @@
                                     </p>
                                     <p class="mb-1 text-base text-gray-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
-                                    </p> 
+                                    </p>
                                 </div>
 
 
-                                <div id="dropdown-cta3" class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+                                <div id="dropdown-cta3"
+                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
-                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant | Remote</h3>
+                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
+                                            Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
                                             data-dismiss-target="#dropdown-cta3" aria-label="Close">
                                             <span class="sr-only">Close</span>
-                                            <svg class="w-2.5 h-2.5" aria-hidden="true"  fill="none"
-                                                viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
                                                     d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                             </svg>
                                         </button>
@@ -360,7 +400,8 @@
                                     </p>
 
                                     <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru, Karnataka, India</span>
+                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                            Karnataka, India</span>
                                         <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
@@ -368,21 +409,23 @@
                                     </p>
                                     <p class="mb-1 text-base text-gray-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
-                                    </p> 
+                                    </p>
                                 </div>
 
 
 
-                                <div id="dropdown-cta4" class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+                                <div id="dropdown-cta4"
+                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
-                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant | Remote</h3>
+                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
+                                            Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
                                             data-dismiss-target="#dropdown-cta4" aria-label="Close">
                                             <span class="sr-only">Close</span>
-                                            <svg class="w-2.5 h-2.5" aria-hidden="true"  fill="none"
-                                                viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
                                                     d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                             </svg>
                                         </button>
@@ -392,7 +435,8 @@
                                     </p>
 
                                     <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru, Karnataka, India</span>
+                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                            Karnataka, India</span>
                                         <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
@@ -400,21 +444,23 @@
                                     </p>
                                     <p class="mb-1 text-base text-gray-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
-                                    </p> 
+                                    </p>
                                 </div>
 
 
 
-                                <div id="dropdown-cta6" class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+                                <div id="dropdown-cta6"
+                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
-                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant | Remote</h3>
+                                        <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
+                                            Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
                                             data-dismiss-target="#dropdown-cta6" aria-label="Close">
                                             <span class="sr-only">Close</span>
-                                            <svg class="w-2.5 h-2.5" aria-hidden="true"  fill="none"
-                                                viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
                                                     d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                             </svg>
                                         </button>
@@ -424,7 +470,8 @@
                                     </p>
 
                                     <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru, Karnataka, India</span>
+                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                            Karnataka, India</span>
                                         <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
@@ -432,186 +479,248 @@
                                     </p>
                                     <p class="mb-1 text-base text-gray-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
-                                    </p> 
+                                    </p>
                                 </div>
                             </div>
                             <!-- all jobs end here  -->
 
+
+
+
+
+
+                            <!-- page pagination 1-->
+                            <div class="flex justify-center">
+                                <div class="flex items-center justify-center pagination h-12 my-4">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="inline-flex -space-x-px text-base">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700   ">Previous</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" aria-current="page"
+                                                    class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700  ">3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">5</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700   ">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <!-- page pagination 2 -->
+                            <div class="flex justify-center w-full">
+                                <div
+                                    class="flex items-center justify-center pagination p-4 my-4 rounded bg-gray-200 border">
+                                    <div class="flex flex-col items-center">
+                                        <!-- Help text -->
+                                        <span class="text-base text-gray-700 ">
+                                            Showing <span class="font-semibold text-black ">1</span> to <span
+                                                class="font-semibold text-black ">10</span> of <span
+                                                class="font-semibold text-black ">100</span> Entries
+                                        </span>
+                                        <div class="inline-flex mt-2 xs:mt-0">
+                                            <!-- Buttons -->
+                                            <button
+                                                class="flex items-center justify-center px-3 h-8 text-base font-normal text-white bg-gray-800 rounded-s hover:bg-black   ">
+                                                <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
+                                                    fill="none" viewBox="0 0 14 10">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M13 5H1m0 0 4 4M1 5l4-4" />
+                                                </svg>
+                                                Prev
+                                            </button>
+                                            <button
+                                                class="flex items-center justify-center px-3 h-8 text-base font-normal text-white bg-gray-800 border-0 border-s border-gray-700 rounded-e hover:bg-black   ">
+                                                Next
+                                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                                                    fill="none" viewBox="0 0 14 10">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
+
+
+
 
                         <!-- job description right side content -->
-                        <div class="w-full">
-                            
-                            <div class="hidden lg:flex pl-2  relative w-full">
-                                <div class="fixed p-2 right-20 bg-white h-3/4 overflow-y-scroll border " style="width: 40%;">
+                        <div class="w-full activeSideJobDesc">
 
-                                    <div class=" relative  pt-2">
-                                        <h3 class="text-2xl font-semibold text-black hover:underline cursor-pointer">Sage X3 Functional Consultant | Remote</h3>
-                                        <p class="mb-1 text-base text-black font-medium hover:underline cursor-pointer">
-                                            KNS Technologies
-                                        </p>
+                            <!-- <div class="hidden lg:flex pl-2  relative w-full"> -->
+                            <div class="fixed p-2 right-20 bg-white h-3/4 overflow-y-scroll border ">
 
-                                        <p class="mb-1 text-base text-gray-600">
-                                            <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru, Karnataka, India</span>
-                                        </p>
+                                <div class=" relative  pt-2">
+                                    <h3 class="text-2xl font-semibold text-black hover:underline cursor-pointer">Sage X3
+                                        Functional Consultant | Remote</h3>
+                                    <p class="mb-1 text-base text-black font-medium hover:underline cursor-pointer">
+                                        KNS Technologies
+                                    </p>
 
-                                        <p class="mb-1 text-base text-gray-600">
-                                            <i class="fa fa-suitcase mr-1" aria-hidden="true"></i><kbd>Remote</kbd> . <kbd>Remote</kbd>
-                                            
-                                        </p>
-                                        
-                                        <p class="mb-1 text-base text-green-600">
-                                            <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
-                                        </p>
-                                        <p class="mb-1 text-base text-gray-600">
-                                            <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
-                                        </p>
-                                        <button type="button"  class="text-white bg-blue-400 hover:bg-blue-500 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "  name="apply_button"  id="apply_button">Apply Now
-                                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" class="w-7 h-4 me-2" viewBox="0 0 24 24">
-                                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                            </svg>
-                                        </button>                                        
-                                    </div>
+                                    <p class="mb-1 text-base text-gray-600">
+                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                            Karnataka, India</span>
+                                    </p>
 
-                                    <div class=" relative  pt-2 text-black">
-                                        <h3 class="text-xl font-semibold text-black py-4">Job Description</h3>
+                                    <p class="mb-1 text-base text-gray-600">
+                                        <i class="fa fa-suitcase mr-1" aria-hidden="true"></i><kbd>Remote</kbd> .
+                                        <kbd>Remote</kbd>
 
-                                       
-                                        <p>Hi,
-                                            Hope you are doing great.
-                                            I am Anil Kumar with Code Repo LLC. We Code Repo LLC is a global staff augmentation firm providing a wide range of talent on-demand and total workforce solutions.
-                                            We have an immediate opening for the positions below with one of our premium clients. Please send the updated resumes for the below mention positions and if you have any further questions, please feel free to reach me
-                                            Wi-Fi Optimization Engineer
-                                            Location: Dallas, TX (Hybrid)
-                                            Duration: 6 -Months</p>
+                                    </p>
 
-                                    </div>
-
-
-                                    <div class=" relative  pt-2 text-black">
-                                        <h3 class="text-xl font-semibold text-black py-4">Responsibilities:</h3>
-
-                                    
-                                        <p>Contribute to requirement analysis, engineering design, solution development and ongoing management of a multi-vendor enterprise Wi-Fi network infrastructure.
-                                            Partner with network operations and deployment teams to analyze data and performance metrics to improve reliability and resiliency of the wireless network.
-                                            Develop automated methods to mitigate and remediate network events and minimize operational complexity.
-                                            Create Wi-Fi Optimization Guidelines
-                                            Host meeting with Market Engineers to educate the markets on Wi-Fi Optimization
-                                            Present Guidelines and Optimization Best Practices on National Calls</p>
-
-                                    </div>
-
-
-
-                                    <div class=" relative  pt-2 text-black">
-                                        <h3 class="text-xl font-semibold text-black py-4">Minimum Qualifications:</h3>
-
-                                        <p>
-                                            CCNA/CCNP/CWNA/CWDP level Switching/Routing/Wi-Fi experience with
-                                            Designing, building, and operating Wi-Fi networks.
-                                            Layer 2/3 Switching
-                                            Controller-based & controllerless enterprise wireless architectures and monitoring systems.
-                                            TCP/IP, IPv4 and IPv6 and related network services (e.g. DHCP and DNS).
-                                            Hands-on experience designing, configuring, optimizing Wi-Fi networks with knowledge of RF design and latest 802.11 standards.
-                                            Scaling of large Wi-Fi networks from end to end (provisioning/monitoring).
-                                            Vendors Cisco, CommScope/Ruckus, Aruba, Open WiFi
-                                            Troubleshooting Wi-Fi connectivity and performance issues using WLAN controllers, over-the-air packet capture analysis and spectrum analyzer.
-                                            Passpoint/Open Roaming
-                                        </p>
-                                        
-
-                                   </div>
-
-
-                                   <button type="button"  class="text-white bg-blue-400 hover:bg-blue-500 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "  name="apply_button"  id="apply_button">Apply Now
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" class="w-7 h-4 me-2" viewBox="0 0 24 24">
+                                    <p class="mb-1 text-base text-green-600">
+                                        <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
+                                    </p>
+                                    <p class="mb-1 text-base text-gray-600">
+                                        <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
+                                    </p>
+                                    <button type="button"
+                                        class="text-white bg-blue-400 hover:bg-blue-500 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
+                                        name="apply_button" id="apply_button">Apply Now
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" class="w-7 h-4 me-2"
+                                            viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
-                                    </button>  
+                                    </button>
                                 </div>
-                                
+
+                                <div class=" relative  pt-2 text-black">
+                                    <h3 class="text-xl font-semibold text-black py-4">Job Description</h3>
+
+
+                                    <p>Hi,
+                                        Hope you are doing great.
+                                        I am Anil Kumar with Code Repo LLC. We Code Repo LLC is a global staff
+                                        augmentation firm providing a wide range of talent on-demand and total workforce
+                                        solutions.
+                                        We have an immediate opening for the positions below with one of our premium
+                                        clients. Please send the updated resumes for the below mention positions and if
+                                        you have any further questions, please feel free to reach me
+                                        Wi-Fi Optimization Engineer
+                                        Location: Dallas, TX (Hybrid)
+                                        Duration: 6 -Months</p>
+
+                                </div>
+
+
+                                <div class=" relative  pt-2 text-black">
+                                    <h3 class="text-xl font-semibold text-black py-4">Responsibilities:</h3>
+
+
+                                    <p>Contribute to requirement analysis, engineering design, solution development and
+                                        ongoing management of a multi-vendor enterprise Wi-Fi network infrastructure.
+                                        Partner with network operations and deployment teams to analyze data and
+                                        performance metrics to improve reliability and resiliency of the wireless
+                                        network.
+                                        Develop automated methods to mitigate and remediate network events and minimize
+                                        operational complexity.
+                                        Create Wi-Fi Optimization Guidelines
+                                        Host meeting with Market Engineers to educate the markets on Wi-Fi Optimization
+                                        Present Guidelines and Optimization Best Practices on National Calls</p>
+
+                                </div>
+
+
+
+                                <div class=" relative  pt-2 text-black">
+                                    <h3 class="text-xl font-semibold text-black py-4">Minimum Qualifications:</h3>
+
+                                    <p>
+                                        CCNA/CCNP/CWNA/CWDP level Switching/Routing/Wi-Fi experience with
+                                        Designing, building, and operating Wi-Fi networks.
+                                        Layer 2/3 Switching
+                                        Controller-based & controllerless enterprise wireless architectures and
+                                        monitoring systems.
+                                        TCP/IP, IPv4 and IPv6 and related network services (e.g. DHCP and DNS).
+                                        Hands-on experience designing, configuring, optimizing Wi-Fi networks with
+                                        knowledge of RF design and latest 802.11 standards.
+                                        Scaling of large Wi-Fi networks from end to end (provisioning/monitoring).
+                                        Vendors Cisco, CommScope/Ruckus, Aruba, Open WiFi
+                                        Troubleshooting Wi-Fi connectivity and performance issues using WLAN
+                                        controllers, over-the-air packet capture analysis and spectrum analyzer.
+                                        Passpoint/Open Roaming
+                                    </p>
+
+
+                                </div>
+
+
+                                <button type="button"
+                                    class="text-white bg-blue-400 hover:bg-blue-500 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
+                                    name="apply_button" id="apply_button">Apply Now
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-7 h-4 me-2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
                             </div>
+
+                            <!-- </div> -->
                         </div>
+
+
+
+
                     </div>
                 </div>
             </div>
 
-            <!-- page pagination 1-->
-            <div class="flex">
-                <div class="flex items-center justify-center pagination h-12 my-4">
-                    <nav aria-label="Page navigation example">
-                        <ul class="inline-flex -space-x-px text-base">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700   ">Previous</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">1</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">2</a>
-                            </li>
-                            <li>
-                                <a href="#" aria-current="page"
-                                    class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700  ">3</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">4</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   ">5</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700   ">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
 
-            <!-- page pagination 2 -->
-            <div class="flex">
-                <div class="flex items-center justify-center pagination p-4 my-4 rounded bg-gray-200 border">
-                    <div class="flex flex-col items-center">
-                        <!-- Help text -->
-                        <span class="text-base text-gray-700 ">
-                            Showing <span class="font-semibold text-black ">1</span> to <span
-                                class="font-semibold text-black ">10</span> of <span
-                                class="font-semibold text-black ">100</span> Entries
-                        </span>
-                        <div class="inline-flex mt-2 xs:mt-0">
-                            <!-- Buttons -->
-                            <button
-                                class="flex items-center justify-center px-3 h-8 text-base font-normal text-white bg-gray-800 rounded-s hover:bg-black   ">
-                                <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
-                                     fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4" />
-                                </svg>
-                                Prev
-                            </button>
-                            <button
-                                class="flex items-center justify-center px-3 h-8 text-base font-normal text-white bg-gray-800 border-0 border-s border-gray-700 rounded-e hover:bg-black   ">
-                                Next
-                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
-                                     fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
+
+
+
+
     </div>
 
 

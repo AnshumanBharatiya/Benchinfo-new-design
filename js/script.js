@@ -10,7 +10,6 @@ function preloaderLoad() {
 $(window).on('load', function() {
     // add your functions
     preloaderLoad();
-
 });
 
 /* ----- Scroll To top ----- */
@@ -25,6 +24,7 @@ function scrollyToTop(){
         behavior:'smooth'
     });
 }
+
 /*===== EXPANDER MENU  =====*/ 
 const showMenu = (toggleId, navId)=>{
     const toggle = document.getElementById(toggleId),
@@ -38,6 +38,7 @@ const showMenu = (toggleId, navId)=>{
     }
 }
 showMenu('header-toggle','nav-menu')
+
 /*===== ACTIVE AND REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');   
 function linkAction(){
@@ -48,19 +49,10 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
-
 // multi select drop down
+if (document.getElementById('relocation')) {
+    VirtualSelect.init({ ele: '#relocation' });
+}
 
-// $(document).ready(function() {
-//     $(".sd-CustomSelect").multipleSelect({
-//         selectAll: false,
-//         onOptgroupClick: function(view) {
-//         $(view).parents("label").addClass("selecte-optgroup");
-//         }
-//     });
-// });
-
-
-VirtualSelect.init({ 
-    ele: '#relocation' 
-});
+// ckeditor
+var editor = CKEDITOR.replace( 'jobDescription' );

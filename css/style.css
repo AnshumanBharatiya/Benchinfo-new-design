@@ -501,6 +501,11 @@ textarea{
     background: var(--user-first-color);
 }
 
+
+.dropdown_emp{
+    background: var(--emp-first-color);
+}
+
 .job-s-card{
     transition: .3s;    
 }
@@ -783,6 +788,13 @@ textarea{
     }
     .our-terms-policy p{
         @apply text-sm;
+    }
+
+    .activeSideJobDesc{
+        display: none;
+    }
+    .activeSideJobDesc.active{
+        @apply  absolute md:relative top-0 left-0 z-10;
     }
     
 
