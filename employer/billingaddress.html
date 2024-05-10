@@ -185,15 +185,102 @@
 
     <div class="sm:ml-64">
 
-        <div class="mt-14 p-4 ">
+        <div class="mt-14 p-4 mb-10">
             <!-- all content -->
             <div class="grid grid-cols-1 relative">
                 <h1 class="text-black text-2xl font-semibold">Billing Details</h1>
             </div>
 
-            
+            <div class="relative lg:w-3/5 mt-8 text-base border shadow p-4 bg-gray-50 ">
+                <div class="flex justify-end my-4 ">
+                    <a href="checkout_cart.html" class="p-2 rounded text-white bg-blue-400 hover:bg-blue-500 text-base">Back to Checkout</a>
+                </div>
+
+                <form action="" method="post">
+                    <div class="flex">
+                        <div class="w-full ">
+                            <div class="mb-5">
+                                <label for="email_address" class="block mb-2 text-base font-medium text-black ">Email
+                                    Address</label>
+                                <input type="email" id="email_address" name="email_address"
+                                    class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 "
+                                    placeholder="Email" required>
+                            </div>
+                            <div class="mb-5">
+                                <label for="organization"
+                                    class="block mb-2 text-base font-medium text-black ">Organization name</label>
+                                <input type="text" id="organization" name="organization"
+                                    class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 "
+                                    placeholder="Organization" required>
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="address1" class="block mb-2 text-base font-medium text-black ">Address Line
+                                    1</label>
+                                <input type="text" id="address1" name="address1"
+                                    class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 "
+                                    placeholder="Street address" required>
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="address2" class="block mb-2 text-base font-medium text-black ">Address Line
+                                    2</label>
+                                <input type="text" id="address2" name="address2"
+                                    class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 "
+                                    placeholder="Apt., suite, unit number, etc. (optional)" required>
+                            </div>
 
 
+                            <div class="mb-5">
+                                <label for="city" class="block mb-2 text-base font-medium text-black ">City</label>
+                                <input type="text" id="city" name="city"
+                                    class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 "
+                                    placeholder="City" required>
+                            </div>
+
+
+                            <div class="flex md:flex-row flex-col mb-5 gap-4">
+                                <div class="w-full ">
+                                    <label for="State" class="block mb-2 text-base font-medium text-black ">State</label>
+                                    <select id="State" name="State" class="  border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 " required>
+                                        <option value="">Select State</option>
+                                        <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AS">American Samoa</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="AA">Armed Forces (AA)</option><option value="AE">Armed Forces (AE)</option><option value="AP">Armed Forces (AP)</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MH">Marshall Islands</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="FM">Micronesia</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PW">Palau</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+
+                                <div class="w-full ">
+                                    <label for="Zip" class="block mb-2 text-base font-medium text-black ">Zip</label>
+                                    <input type="text" id="Zip" name="Zip"
+                                        class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2 "
+                                        placeholder="Zip" required>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-5">
+                                <label for="phone" class="block mb-2 text-base font-medium text-black ">Phone number</label>
+                                <div class="flex items-center">
+                                    <select id="phonecode" name="phonecode" class="w-20  border border-gray-300 text-black text-base rounded-s  focus:ring-blue-500 focus:border-blue-500 block  p-2 " required>
+                                      <option value="+1">+1</option>
+                                      <option value="+44">+44</option>
+                                      <option value="+61">+61</option>
+                                      <!-- Add more country codes as needed -->
+                                    </select>
+                                    <input type="text" id="phone" name="phone" class=" border border-gray-300 text-black text-base focus:ring-blue-500 focus:border-blue-500 block w-full p-2 rounded-e" placeholder="(201) 555-0123" required>
+                                  </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-start mb-1">
+                        <input type="submit" name="submit " value="Update"
+                            class="px-5 py-2 rounded text-white bg-blue-400 hover:bg-blue-500 cursor-pointer">
+                    </div>
+                </form>
+            </div>
 
         </div>
 

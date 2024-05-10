@@ -27,9 +27,9 @@
     </style>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <div class="preloader"></div>
-    <div class="container mx-auto sm:container sm:mx-auto">
+    <div class="container mx-auto sm:container sm:mx-auto ">
 
         <!-- Header Part -->
         <header class="header header_user">
@@ -76,7 +76,8 @@
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__item"><a href="employer/register.html"
                                             class="drop__link">Register</a></li>
-                                    <li class="dropdown__item"><a href="employer/login.html" class="drop__link">Login</a>
+                                    <li class="dropdown__item"><a href="employer/login.html"
+                                            class="drop__link">Login</a>
                                     </li>
                                     <li class="dropdown__item"><a href="employer/how_it_works.html"
                                             class="drop__link">How it Works</a></li>
@@ -87,7 +88,8 @@
                             <li class="nav__item job_post_link"><a href="employer/register.html" class="drop__link">Free
                                     Job Post</a></li>
                             <li class="nav__item job_post_button"><a href="employer/register.html"
-                                    class="user_bottonpage text-white px-3 py-3 rounded transition duration-300">Free Job
+                                    class="user_bottonpage text-white px-3 py-3 rounded transition duration-300">Free
+                                    Job
                                     Post</a></li>
                         </ul>
                     </div>
@@ -96,7 +98,7 @@
         </header>
 
         <!-- breadcrumb -->
-        <div class="breadcrumb">
+        <!-- <div class="breadcrumb">
             <ol class="flex items-center whitespace-nowrap  px-3" aria-label="Breadcrumb">
                 <li class="inline-flex items-center">
                     <a class="flex items-center text-base text-gray-600 hover:text-blue-600 focus:outline-none focus:text-blue-600"
@@ -119,80 +121,136 @@
                     Job Seeker Registration
                 </li>
             </ol>
-        </div>
+        </div> -->
 
 
-        <div class="  text-black flex justify-center">
+
+        <div class="  text-black flex justify-center  my-10 relative py-10">
             <!-- min-h-screen -->
-            <div class="max-w-screen-xl m-0 sm:m-10 bg-white shadow-xl sm:rounded-lg flex justify-center flex-1">
+            <div class="max-w-screen-xl  sm:m-10 flex flex-1 justify-around relative ">
 
-                <div class="flex-1 bg-white hidden lg:flex flex-col justify-center">
+                <!-- left side data -->
+                <div class="  hidden lg:flex flex-col w-1/3 relative">
 
-                    <!-- Second Row: Text -->
-                    <div class="flex flex-col items-start justify-center h-1/2  font-semibold">
-                        <div class=" px-16">
-                            <h1 class=" text-lg mb-4 font-medium text-black">Job Seeker Registration
-                            </h1>
-                            <div class="flex relative pb-8">
-                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div class="h-full w-1 bg-gray-300 pointer-events-none" style="margin-left: -5px;">
+                    <div class="p-4 fixed  inherit-width  bg-white" >
+                        <!-- First Row: Image -->
+                        <div class="w-40 h-40 bg-gray-100 bg-contain bg-center bg-no-repeat user-registaer-image border text-center m-auto"
+                            style="border-radius: 50%;">
+                        </div>
+
+                        <!-- Second Row: Text -->
+                        <div class="flex flex-col items-start justify-center h-1/2">
+                            <div class="p-4">
+                                <h1 class=" text-lg mb-4 font-medium text-black">Job Seeker Registration
+                                </h1>
+                                <div class="flex relative pb-4">
+                                    <!-- <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                        <div class="h-full w-1 bg-gray-300 pointer-events-none"
+                                            style="margin-left: -5px;">
+                                        </div>
+                                    </div> -->
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" class="w-4 h-4"
+                                            viewBox="0 0 24 24">
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow pl-4">
+                                        <p class="leading-relaxed text-base">Search daily updated jobs.</p>
                                     </div>
                                 </div>
-                                <div
-                                    class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                        <path d="M22 4L12 14.01l-3-3"></path>
-                                    </svg>
-                                </div>
-                                <div class="flex-grow pl-4">
-                                    <p class="leading-relaxed text-base">Search daily updated jobs.</p>
-                                </div>
-                            </div>
-                            <div class="flex relative pb-8">
-                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                    <div class="h-full w-1 bg-gray-300 pointer-events-none" style="margin-left: -5px;">
+                                <div class="flex relative pb-4">
+                                    <!-- <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                        <div class="h-full w-1 bg-gray-300 pointer-events-none"
+                                            style="margin-left: -5px;">
+                                        </div>
+                                    </div> -->
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" class="w-4 h-4"
+                                            viewBox="0 0 24 24">
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow pl-4">
+                                        <p class="leading-relaxed text-base">One click apply with your profile.</p>
                                     </div>
                                 </div>
-                                <div
-                                    class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                        <path d="M22 4L12 14.01l-3-3"></path>
-                                    </svg>
-                                </div>
-                                <div class="flex-grow pl-4">
-                                    <p class="leading-relaxed text-base">One click apply with your profile.</p>
-                                </div>
-                            </div>
 
-                            <div class="flex relative">
+                                <div class="flex relative pb-4">
+                                    <!-- <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                        <div class="h-full w-1 bg-gray-300 pointer-events-none"
+                                            style="margin-left: -5px;">
+                                        </div>
+                                    </div> -->
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" class="w-4 h-4"
+                                            viewBox="0 0 24 24">
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow pl-4">
+                                        <p class="leading-relaxed text-base">One click apply with your profile.</p>
+                                    </div>
+                                </div>
 
-                                <div
-                                    class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                                        <path d="M22 4L12 14.01l-3-3"></path>
-                                    </svg>
+                                <div class="flex relative pb-4">
+                                    <!-- <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                        <div class="h-full w-1 bg-gray-300 pointer-events-none"
+                                            style="margin-left: -5px;">
+                                        </div>
+                                    </div> -->
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" class="w-4 h-4"
+                                            viewBox="0 0 24 24">
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow pl-4">
+                                        <p class="leading-relaxed text-base">One click apply with your profile.</p>
+                                    </div>
                                 </div>
-                                <div class="flex-grow pl-4">
-                                    <p class="leading-relaxed text-base">Receive your profile related jobs to registered
-                                        email.</p>
+
+
+
+                                <div class="flex relative">
+
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full stepicon inline-flex items-center justify-center text-white relative z-10">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" class="w-4 h-4"
+                                            viewBox="0 0 24 24">
+                                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                            <path d="M22 4L12 14.01l-3-3"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow pl-4">
+                                        <p class="leading-relaxed text-base">Receive your profile related jobs to
+                                            registered
+                                            email.</p>
+                                    </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- First Row: Image -->
-                    <div class=" w-full bg-contain bg-center bg-no-repeat user-registaer-image h-3/4">
-                    </div>
-                    
+
                 </div>
 
-                <div class="lg:w-1/2 xl:w-5/12 p-4 sm:p-10">
+                <!-- right side data -->
+                <div class="lg:w-1/2 xl:w-5/12 p-8 sm:p-10 bg-white border relative rounded-md shadow">
 
                     <div class="mt-8 flex flex-col items-left">
                         <h1 class="text-3xl font-bold">
@@ -201,7 +259,36 @@
                         <div class="w-full flex-1 mt-8">
                             <div class="mx-auto ">
                                 <form>
-                                    <div class="relative z-0 w-full mb-5 group">
+
+                                    <div class="mb-5">
+                                        <label for="fullname" class="block mb-2 text-base font-medium text-black ">Full Name</label>
+                                        <input type="text" id="fullname" name="fullname" class="border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none" placeholder="Full Name" required>
+                                    </div>
+
+
+                                    <div class="mb-5">
+                                        <label for="email" class="block mb-2 text-base font-medium text-black ">Email Address</label>
+                                        <input type="email" id="email" name="email" class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none" placeholder="name@company.com" required>
+                                    </div>
+
+
+                                    <div class="mb-5">
+                                        <label for="password" class="block mb-2 text-base font-medium text-black ">Password</label>
+                                        <input type="password" id="password" name="password" class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none" placeholder="••••••••" required>
+                                    </div>
+
+
+                                    <div class="mb-5">
+                                        <label for="confirm_password" class="block mb-2 text-base font-medium text-black ">Confirm Password</label>
+                                        <input type="password" id="confirm_password" name="confirm_password" class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none" placeholder="••••••••" required>
+                                    </div>
+
+                                    <div class="mb-5">
+                                        <label for="phone_no" class="block mb-2 text-base font-medium text-black ">Phone No</label>
+                                        <input type="text" id="phone_no" name="phone_no" class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none" placeholder="Phone No" required>
+                                    </div>
+
+                                    <!-- <div class="relative z-0 w-full mb-5 group">
                                         <input type="text" name="floating_name" id="floating_name"
                                             class="block py-2.5 px-0 w-full text-base text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none   dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" " required />
@@ -239,17 +326,26 @@
                                         <label for="floating_phone"
                                             class="peer-focus:font-medium absolute text-base text-gray-600  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
                                             No</label>
-                                    </div>
-                                    <div class="relative z-0 w-full mb-5 group">
+                                    </div> -->
+
+                                    <div class="mb-5">
+                                        <label for="countries" class="block mb-2 text-base font-medium text-black ">Country</label>
+                                        
                                         <select id="countries"
-                                            class=" border border-gray-300 text-black text-base focus:ring-0 focus:border-blue-600 block w-full p-2 focus:outline-none">
+                                            class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 focus:outline-none" required>
                                             <option value="">Select Country</option>
                                             <option value="USA">USA</option>
                                         </select>
                                     </div>
+                                    <div class="relative z-0 w-full mb-5 group">
+                                        
+                                    </div>
+
+
+
                                     <div class="relative">
                                         <div
-                                            class="flex flex-row items-center p-2 border-2 border-gray-300 rounded justify-between w-64">
+                                            class="flex flex-row items-center p-2 border border-gray-300 rounded justify-between w-64">
                                             <!-- Checkbox -->
                                             <label class="inline-flex items-center">
                                                 <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
@@ -303,7 +399,7 @@
     </div>
 
     <!-- footer -->
-    <footer class=" body-font user-footers-color">
+    <footer class=" body-font user-footers-color" style="position: relative; z-index: 10000000;">
         <div
             class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 
@@ -369,10 +465,11 @@
                         <!-- social_icon -->
                         <li>
                             <a title="Connect on Whatsapp" target="blank"><i class="fa fa-whatsapp fa-2x"
-                                aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i></a>
 
                             <a href="https://www.linkedin.com/company/benchinfo/about/" title="Connect on linkedin"
-                                    target="blank" class="px-2"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                                target="blank" class="px-2"><i class="fa fa-linkedin-square fa-2x"
+                                    aria-hidden="true"></i></a>
                         </li>
 
                     </nav>
@@ -392,7 +489,7 @@
                 </div>
             </div>
         </div>
-        <div class= "text-gray-600">
+        <div class="text-gray-600">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                 <p class=" text-base text-center sm:text-left">© 2024 Benchinfo —
                     <a href="" rel="noopener noreferrer" class="font-medium ml-1" target="_blank">@BenchInfO</a>

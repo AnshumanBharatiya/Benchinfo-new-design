@@ -132,7 +132,7 @@
     background-size: 34px;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 100000;
+    z-index: 9999999999999999;
     visibility: hidden;
     opacity: 0;
     transition: 0.6s;
@@ -496,6 +496,10 @@ textarea{
 
 .user-portal-header-text{
     @apply pr-4 text-white text-base;
+    transition: .3s;
+}
+.user-portal-header-text:hover{
+    color: var(--user-header-text-hover-color);
 }
 .dropdown_user{
     background: var(--user-first-color);
@@ -642,7 +646,7 @@ textarea{
   /* ****************** */
 
 
-  .relocation{
+.relocation{
 	max-width: 100%;
 	width: 350px;
 }
@@ -685,6 +689,65 @@ textarea{
     box-shadow: none!important;
     border-width: 2px;
 }
+
+
+.userBtn1{
+
+    background-color: #e75d74!important;
+}
+.userBtn1:hover{
+    background-color: #ff1d44!important;
+}
+
+.userCardColor{
+    background-color: #fbebaf!important;
+}
+.userCardColor2{
+    background-color: #cccc66!important;
+}
+
+
+.userBtn2{
+    background-color: #a6bf73!important;
+}
+.userBtn2:hover{
+    background-color: #cccc66!important;
+}
+
+
+.userBtn3{
+    background-color: #2f4247!important;
+}
+.userBtn3:hover{
+    background-color: #466067!important;
+}
+
+
+.descBackButton{
+    display: none!important;
+}
+
+
+.userCardColorBorder3{
+    border-color: var(--user-dark-color)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* end admin and user portal panel css */
 
@@ -793,7 +856,10 @@ textarea{
     .activeSideJobDesc{
         display: none;
     }
-    .activeSideJobDesc.active{
+    .descBackButton{
+        display: inline-flex!important;
+    }
+    .activeSideJobDesc{
         @apply  absolute md:relative top-0 left-0 z-10;
     }
     

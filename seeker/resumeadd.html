@@ -233,8 +233,38 @@
                                         placeholder="5+ Years" required>
                                 </div>
 
+
+                                <div class="mb-5">
+                                    <label class="block mb-2 text-base font-medium text-black "
+                                        for="file_upload">Resume</label>
+                                    <input
+                                        class="block w-full text-base text-black border border-gray-300 rounded cursor-pointer   focus:outline-none  "
+                                        aria-describedby="file_upload" id="file_upload" type="file">
+                                    <p class="mt-1 text-xs text-gray-600 " id="file_upload">
+                                        Suitable files are .doc,.docx,.pdf.</p>
+                                </div>
+
+                                <div class="mb-5">
+
+                                    <div class="flex mb-4">
+                                        <div class="flex items-center h-5">
+                                            <input id="demo" aria-describedby="demo-text" type="checkbox" value="" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-0">
+                                        </div>
+                                        <div class="ms-2 text-sm">
+                                            <label for="demo" class="font-medium text-black ">Receive Job Alerts (Don't want job alert Please uncheck.)</label>
+                                            <p id="demo-text" class="text-xs font-normal text-gray-600 ">(Receive relevant jobs directly to your email)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
                             </div>
+
+
                             <div class=" w-full p-2 ">
+
                                 <div class="mb-5">
                                     <label for="job-title" class="block mb-2 text-base font-medium text-black ">Job
                                         Title</label>
@@ -277,31 +307,16 @@
                                         class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                                         placeholder="H1B" required>
                                 </div>
+
+
                             </div>
                         </div>
 
 
                         <div class="flex md:flex-row flex-col">
 
-                            <div class=" w-full p-2  ">
-                                <div class="mb-5">
-                                    <label for="resumename" class="block mb-2 text-base font-medium text-black ">Resume</label>
-                                    <input type="file" id="resumename" name="resumename"
-                                        class=" border border-gray-300 text-black text-base rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                                        placeholder="Name" required>
-                                    <p class="mt-1 text-xs text-gray-600 " id="resumename">
-                                            Suitable files are .doc,.docx,.pdf.</p>
-                                </div>
+                            <div class=" w-full p-5 userCardColor shadow rounded">
 
-                                <div class="mb-5">
-                                    <label class="block mb-2 text-base font-medium text-black "
-                                        for="file_upload">Resume</label>
-                                    <input
-                                        class="block w-full text-base text-black border border-gray-300 rounded cursor-pointer   focus:outline-none  "
-                                        aria-describedby="file_upload" id="file_upload" type="file">
-                                    <p class="mt-1 text-xs text-gray-600 " id="file_upload">
-                                        Suitable files are .doc,.docx,.pdf.</p>
-                                </div>
 
                                 <div class="py-8">
                                     <h1 class="text-black text-xl font-semibold">Job Alert</h1>
@@ -370,35 +385,11 @@
 
                         </div>
 
-                        <div class="mb-5">
 
 
-                            <div class="flex items-center justify-center w-full">
-                                <label for="resume-upload"
-                                    class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded cursor-pointerhover:bg-gray-100">
-                                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                                        <svg class="w-8 h-8 mb-4 text-gray-600 " aria-hidden="true"
-                                             fill="none" viewBox="0 0 20 16">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
-                                        </svg>
-                                        <p class="mb-2 text-base text-black "><span
-                                                class="font-medium">Click to upload</span></p>
-                                        <p class="text-xs text-black ">Suitable files are
-                                            .doc,.docx,.pdf.</p>
-                                    </div>
-                                    <input id="resume-upload" name="resume-upload" type="file" class="hidden" />
-                                </label>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="flex justify-start mb-1">
+                        <div class="flex justify-start mb-1 mt-4">
                             <input type="submit" name="submit " value="Save"
-                                class="px-8 py-2 text-lg rounded text-white bg-blue-400 hover:bg-blue-500 cursor-pointer">
+                                class="px-8 py-2 text-lg rounded text-white userBtn3 cursor-pointer">
                         </div>
                     </form>
                 </div>

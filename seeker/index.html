@@ -40,7 +40,7 @@
                         <img src="../images/header-logo.png" class="me-3" alt="FlowBite Logo" />
                     </a>
                     <a href="index.html" class="user-portal-header-text">Jobs</a>
-                    <a href="benchlist.html" class="user-portal-header-text">Add Resumes / Job Alerts</a>
+                    <a href="benchlist.html" class="user-portal-header-text px-4">Add Resumes / Job Alerts</a>
                 </div>
                 <div class="flex ustify-around">
                     <div class="flex justify-around items-center ms-3">
@@ -107,7 +107,7 @@
         class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full border-r border-gray-300 sm:translate-x-0 leftsidebar"
         aria-label="Sidebar">
         <div class="h-full px-3 pb-4 overflow-y-auto  ">
-            <div id="dropdown-cta" class="p-4 mt-2 mb-4 rounded-lg bg-blue-100 " role="alert">
+            <div id="dropdown-cta" class="p-4 mt-2 mb-4 rounded-lg userCardColor " role="alert">
                 <div class="flex items-center mb-3">
                     <img class="w-12 h-w-12 " src="../images/portal-images/working2.png" alt="user photo">
 
@@ -122,13 +122,13 @@
                     </button>
                 </div>
                 <!-- <span class="bg-orange-100 text-orange-800 text-base font-semibold me-2 px-2.5 py-0.5 rounded  ">Add Job Recommendation</span> -->
-                <p class="mb-3 bg-orange-100 text-orange-800 text-base font-semibold me-2 px-2.5 py-0.5 rounded  ">
+                <p class="mb-3 bg-orange-100 text-black text-base font-semibold me-2 px-2.5 py-0.5 rounded  ">
                     Add Job Recommendation
                 </p>
-                <p class="mb-3 text-base text-blue-800">
+                <p class="mb-3 text-base text-black">
                     Job Recommendation show jobs based on your job alerts..
                 </p>
-                <a class="text-base text-blue-800 underline font-normal hover:text-blue-900 " href="#">Click here</a> to
+                <a class="text-base text-black underline font-normal hover:text-blue-900 " href="#">Click here</a> to
                 add job recommendation
             </div>
             <ul class="space-y-2 font-normal">
@@ -207,7 +207,7 @@
                     <div class="flex">
                         <!-- <label for="search-dropdown" class="mb-2 text-base font-normal text-black sr-only ">Your Email</label> -->
                         <button id="dropdown-location" data-dropdown-toggle="location"
-                            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-base font-normal text-center text-black  border border-gray-300 rounded-s-lg focus:outline-none"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 text-base font-normal text-center text-black  border border-gray-300 rounded-s-lg focus:outline-none"
                             type="button">Location
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -236,7 +236,7 @@
                         </div>
 
                         <button id="dropdown-experience" data-dropdown-toggle="exprience"
-                            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none"
                             type="button">Experience
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -256,6 +256,31 @@
                                 <li>
                                     <button type="button"
                                         class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">3</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button id="dropdown-experience" data-dropdown-toggle="datetime"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none"
+                            type="button">DateTime
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="datetime" class="z-10 hidden bg-white divide-y divide-gray-300  border w-32">
+                            <ul class=" text-base text-gray-700 " aria-labelledby="dropdown-experience">
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">7 Day Ago</button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">30 Day Ago</button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">60 Day Ago</button>
                                 </li>
                             </ul>
                         </div>
@@ -301,18 +326,16 @@
                         <div class="w-full border">
                             <!-- center div for all jobs -->
                             <div class="relative w-full">
-                                <div class="fixed bg-blue-600 flex flex-col p-4 top-jobpick">
-                                    <p class="font-medium text-lg text-white">Top job picks for you</p>
-                                    <p class="text-base text-white">2 results</p>
-
+                                <div class="fixed bg-gray-50 flex flex-col p-4 top-jobpick">
+                                    <p class="font-medium text-lg text-black">100 Job Founds</p>
                                 </div>
                             </div>
 
-                            <div class="pt-20">
+                            <div class="pt-16">
 
 
                                 <div id="dropdown-cta1"
-                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card activemenu"
+                                    class="p-4 border-b mb-1  userCardColor cursor-pointer job-s-card activemenu"
                                     role="alert">
                                     <div class="flex items-center mb-2">
                                         <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
@@ -346,7 +369,7 @@
                                 </div>
 
                                 <div id="dropdown-cta2"
-                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+                                    class="p-4 border-b mb-1  bg-gray-50 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
                                         <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
                                             Remote</h3>
@@ -380,7 +403,7 @@
 
 
                                 <div id="dropdown-cta3"
-                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+                                    class="p-4 border-b mb-1  bg-white cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
                                         <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
                                             Remote</h3>
@@ -415,7 +438,7 @@
 
 
                                 <div id="dropdown-cta4"
-                                    class="p-4 border-b mb-1  bg-gray-100 cursor-pointer job-s-card " role="alert">
+                                    class="p-4 border-b mb-1  userCardColor2 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
                                         <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
                                             Remote</h3>
@@ -484,11 +507,6 @@
                             </div>
                             <!-- all jobs end here  -->
 
-
-
-
-
-
                             <!-- page pagination 1-->
                             <div class="flex justify-center">
                                 <div class="flex items-center justify-center pagination h-12 my-4">
@@ -527,44 +545,7 @@
                                 </div>
                             </div>
 
-                            <!-- page pagination 2 -->
-                            <div class="flex justify-center w-full">
-                                <div
-                                    class="flex items-center justify-center pagination p-4 my-4 rounded bg-gray-200 border">
-                                    <div class="flex flex-col items-center">
-                                        <!-- Help text -->
-                                        <span class="text-base text-gray-700 ">
-                                            Showing <span class="font-semibold text-black ">1</span> to <span
-                                                class="font-semibold text-black ">10</span> of <span
-                                                class="font-semibold text-black ">100</span> Entries
-                                        </span>
-                                        <div class="inline-flex mt-2 xs:mt-0">
-                                            <!-- Buttons -->
-                                            <button
-                                                class="flex items-center justify-center px-3 h-8 text-base font-normal text-white bg-gray-800 rounded-s hover:bg-black   ">
-                                                <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
-                                                    fill="none" viewBox="0 0 14 10">
-                                                    <path stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2"
-                                                        d="M13 5H1m0 0 4 4M1 5l4-4" />
-                                                </svg>
-                                                Prev
-                                            </button>
-                                            <button
-                                                class="flex items-center justify-center px-3 h-8 text-base font-normal text-white bg-gray-800 border-0 border-s border-gray-700 rounded-e hover:bg-black   ">
-                                                Next
-                                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
-                                                    fill="none" viewBox="0 0 14 10">
-                                                    <path stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2"
-                                                        d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                           
 
                         </div>
 
@@ -576,6 +557,13 @@
 
                             <!-- <div class="hidden lg:flex pl-2  relative w-full"> -->
                             <div class="fixed p-2 right-20 bg-white h-3/4 overflow-y-scroll border ">
+                                <button type="button" class=" ms-auto -mx-1.5 -my-1.5 bg-blue-100  justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6 mt-2 descBackButton" data-dismiss-target="#dropdown-cta1" aria-label="Close">
+                                    
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                                      </svg>
+                                      
+                                </button>
 
                                 <div class=" relative  pt-2">
                                     <h3 class="text-2xl font-semibold text-black hover:underline cursor-pointer">Sage X3
@@ -601,8 +589,8 @@
                                     <p class="mb-1 text-base text-gray-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
-                                    <button type="button"
-                                        class="text-white bg-blue-400 hover:bg-blue-500 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
+                                    <button 
+                                        class="text-white userBtn1 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
                                         name="apply_button" id="apply_button">Apply Now
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2" class="w-7 h-4 me-2"
@@ -673,8 +661,8 @@
                                 </div>
 
 
-                                <button type="button"
-                                    class="text-white bg-blue-400 hover:bg-blue-500 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
+                                <button 
+                                    class="text-white userBtn2 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
                                     name="apply_button" id="apply_button">Apply Now
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2" class="w-7 h-4 me-2"
