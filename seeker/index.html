@@ -32,6 +32,30 @@
 <body>
     <div class="preloader"></div>
 
+
+    <div id="emessage" class="items-center p-4  text-red-800 rounded bg-red-50   msg_popup_alerts" role="alert">
+        <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+            <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+        </svg>
+        <span class="sr-only">Info</span>
+        <div class="ms-3 text-sm font-medium" id="errormsg">
+            A simple info alert with an <a href="#" class="font-semibold underline hover:no-underline">example link</a>.
+            Give it a click if you
+            like.
+        </div>
+        <button type="button"
+            class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-800 rounded focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-7 w-7  "
+            onclick="closeError()">
+            <span class="sr-only">Close</span>
+            <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+        </button>
+    </div>
+
+
     <nav class="fixed top-0 z-50 w-full header_user border-b border-gray-300  ">
         <div class="px-3 lg:px-5 lg:pl-3">
             <div class="flex items-center justify-between">
@@ -201,13 +225,13 @@
 
     <div class="sm:ml-64">
         <!-- search bar start -->
-        <nav class="fixed top-10 z-20 bg-white border-b border-gray-300" style="width: -webkit-fill-available;">
+        <nav class="fixed top-10 z-20 bg-white border-b border-gray-300 searchBar">
             <div class="p-4">
-                <form class="max-w-2xl mx-auto">
+                <form class="max-w-2xl mx-auto" id="myForm">
                     <div class="flex">
-                        <!-- <label for="search-dropdown" class="mb-2 text-base font-normal text-black sr-only ">Your Email</label> -->
+
                         <button id="dropdown-location" data-dropdown-toggle="location"
-                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 text-base font-normal text-center text-black  border border-gray-300 rounded-s-lg focus:outline-none"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 sm:text-base text-xs font-normal text-center text-black  border border-gray-300 rounded-s-lg focus:outline-none"
                             type="button">Location
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -215,7 +239,7 @@
                             </svg>
                         </button>
                         <div id="location" class="z-10 hidden bg-white divide-y divide-gray-300  border min-w-24 ">
-                            <ul class=" text-base text-gray-700 " aria-labelledby="dropdown-location">
+                            <ul class=" sm:text-base text-xs text-gray-700 " aria-labelledby="dropdown-location">
                                 <li>
                                     <button type="button"
                                         class="inline-flex w-full px-4 py-2 hover:bg-gray-300  ">USA</button>
@@ -236,7 +260,7 @@
                         </div>
 
                         <button id="dropdown-experience" data-dropdown-toggle="exprience"
-                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 sm:text-base text-xs font-normal text-center text-black  border border-gray-300 focus:outline-none"
                             type="button">Experience
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -244,7 +268,7 @@
                             </svg>
                         </button>
                         <div id="exprience" class="z-10 hidden bg-white divide-y divide-gray-300  border w-32">
-                            <ul class=" text-base text-gray-700 " aria-labelledby="dropdown-experience">
+                            <ul class=" sm:text-base text-xs text-gray-700 " aria-labelledby="dropdown-experience">
                                 <li>
                                     <button type="button"
                                         class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">1</button>
@@ -261,7 +285,7 @@
                         </div>
 
                         <button id="dropdown-experience" data-dropdown-toggle="datetime"
-                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 text-base font-normal text-center text-black  border border-gray-300 focus:outline-none"
+                            class="flex-shrink-0 z-10 inline-flex items-center py-1.5 px-2 sm:text-base text-xs font-normal text-center text-black  border border-gray-300 focus:outline-none"
                             type="button">DateTime
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -269,29 +293,29 @@
                             </svg>
                         </button>
                         <div id="datetime" class="z-10 hidden bg-white divide-y divide-gray-300  border w-32">
-                            <ul class=" text-base text-gray-700 " aria-labelledby="dropdown-experience">
+                            <ul class=" sm:text-base text-xs text-gray-700 " aria-labelledby="dropdown-experience">
                                 <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">7 Day Ago</button>
+                                    <button type="button" class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">7 Day
+                                        Ago</button>
                                 </li>
                                 <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">30 Day Ago</button>
+                                    <button type="button" class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">30
+                                        Day Ago</button>
                                 </li>
                                 <li>
-                                    <button type="button"
-                                        class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">60 Day Ago</button>
+                                    <button type="button" class="inline-flex w-full px-4 py-1 hover:bg-gray-300  ">60
+                                        Day Ago</button>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="relative w-full">
-                            <input type="text" id="search-dropdown"
-                                class="block p-2.5 w-full z-20 text-base text-black  rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 outline-none"
-                                placeholder="Search skils | designation | companies" required />
+                            <input type="text"
+                                class="block p-2.5 w-full z-20 sm:text-base text-xs text-black  rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 outline-none searchTextField"
+                                id="common_text" placeholder="Search skils | designation | companies" />
 
                             <button type="submit"
-                                class="absolute top-0 end-0 p-2.5 text-base font-normal h-full text-white bg-blue-600 rounded-e-lg border    outline-none">
+                                class="absolute top-0 end-0 p-2.5 sm:text-base text-xs font-normal h-full text-white userBtn2 rounded-e-lg border    outline-none">
                                 <svg class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 20 20">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
@@ -334,7 +358,7 @@
                             <div class="pt-16">
 
 
-                                <div id="dropdown-cta1"
+                                <div id="dropdown-cta1" onclick="openJobDesc('1')"
                                     class="p-4 border-b mb-1  userCardColor cursor-pointer job-s-card activemenu"
                                     role="alert">
                                     <div class="flex items-center mb-2">
@@ -342,7 +366,8 @@
                                             Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
-                                            data-dismiss-target="#dropdown-cta1" aria-label="Close">
+                                            data-dismiss-target="#dropdown-cta1" aria-label="Close"
+                                            onclick="closeDropdown(event)">
                                             <span class="sr-only">Close</span>
                                             <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -355,27 +380,30 @@
                                         KNS Technologies
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                    <p class="mb-1 text-base ">
+                                        <i class="fa fa-map-marker mr-1 text-blue-500" aria-hidden="true"></i><span
+                                            class="text-blue-500">Bengaluru,
                                             Karnataka, India</span>
-                                        <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
+                                        <i class="fa fa-suitcase pl-5 mr-1 text-yellow-700" aria-hidden="true"></i><span
+                                            class="text-yellow-700">Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
                                         <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
                                     </p>
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-red-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
                                 </div>
 
-                                <div id="dropdown-cta2"
+                                <div id="dropdown-cta2" onclick="openJobDesc('2')"
                                     class="p-4 border-b mb-1  bg-gray-50 cursor-pointer job-s-card " role="alert">
                                     <div class="flex items-center mb-2">
                                         <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
                                             Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
-                                            data-dismiss-target="#dropdown-cta2" aria-label="Close">
+                                            data-dismiss-target="#dropdown-cta2" aria-label="Close"
+                                            onclick="closeDropdown(event)">
                                             <span class="sr-only">Close</span>
                                             <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -388,28 +416,31 @@
                                         KNS Technologies
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                    <p class="mb-1 text-base ">
+                                        <i class="fa fa-map-marker mr-1 text-blue-500" aria-hidden="true"></i><span
+                                            class="text-blue-500">Bengaluru,
                                             Karnataka, India</span>
-                                        <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
+                                        <i class="fa fa-suitcase pl-5 mr-1 text-yellow-700" aria-hidden="true"></i><span
+                                            class="text-yellow-700">Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
                                         <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
                                     </p>
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-red-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
                                 </div>
 
 
-                                <div id="dropdown-cta3"
-                                    class="p-4 border-b mb-1  bg-white cursor-pointer job-s-card " role="alert">
+                                <div id="dropdown-cta3" class="p-4 border-b mb-1  bg-white cursor-pointer job-s-card "
+                                    role="alert">
                                     <div class="flex items-center mb-2">
                                         <h3 class="text-lg font-semibold text-blue-800">Sage X3 Functional Consultant |
                                             Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
-                                            data-dismiss-target="#dropdown-cta3" aria-label="Close">
+                                            data-dismiss-target="#dropdown-cta3" aria-label="Close"
+                                            onclick="closeDropdown(event)">
                                             <span class="sr-only">Close</span>
                                             <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -422,15 +453,17 @@
                                         KNS Technologies
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                    <p class="mb-1 text-base ">
+                                        <i class="fa fa-map-marker mr-1 text-blue-500" aria-hidden="true"></i><span
+                                            class="text-blue-500">Bengaluru,
                                             Karnataka, India</span>
-                                        <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
+                                        <i class="fa fa-suitcase pl-5 mr-1 text-yellow-700" aria-hidden="true"></i><span
+                                            class="text-yellow-700">Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
                                         <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
                                     </p>
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-red-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
                                 </div>
@@ -444,7 +477,8 @@
                                             Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
-                                            data-dismiss-target="#dropdown-cta4" aria-label="Close">
+                                            data-dismiss-target="#dropdown-cta4" aria-label="Close"
+                                            onclick="closeDropdown(event)">
                                             <span class="sr-only">Close</span>
                                             <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -457,15 +491,17 @@
                                         KNS Technologies
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                    <p class="mb-1 text-base ">
+                                        <i class="fa fa-map-marker mr-1 text-blue-500" aria-hidden="true"></i><span
+                                            class="text-blue-500">Bengaluru,
                                             Karnataka, India</span>
-                                        <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
+                                        <i class="fa fa-suitcase pl-5 mr-1 text-yellow-700" aria-hidden="true"></i><span
+                                            class="text-yellow-700">Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
                                         <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
                                     </p>
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-red-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
                                 </div>
@@ -479,7 +515,8 @@
                                             Remote</h3>
                                         <button type="button"
                                             class="ms-auto -mx-1.5 -my-1.5 bg-blue-100 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6  "
-                                            data-dismiss-target="#dropdown-cta6" aria-label="Close">
+                                            data-dismiss-target="#dropdown-cta6" aria-label="Close"
+                                            onclick="closeDropdown(event)">
                                             <span class="sr-only">Close</span>
                                             <svg class="w-2.5 h-2.5" aria-hidden="true" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -492,15 +529,17 @@
                                         KNS Technologies
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
-                                        <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
+                                    <p class="mb-1 text-base ">
+                                        <i class="fa fa-map-marker mr-1 text-blue-500" aria-hidden="true"></i><span
+                                            class="text-blue-500">Bengaluru,
                                             Karnataka, India</span>
-                                        <i class="fa fa-suitcase pl-5 mr-1" aria-hidden="true"></i><span>Remote</span>
+                                        <i class="fa fa-suitcase pl-5 mr-1 text-yellow-700" aria-hidden="true"></i><span
+                                            class="text-yellow-700">Remote</span>
                                     </p>
                                     <p class="mb-1 text-base text-green-600">
                                         <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
                                     </p>
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-red-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
                                 </div>
@@ -545,7 +584,7 @@
                                 </div>
                             </div>
 
-                           
+
 
                         </div>
 
@@ -553,16 +592,20 @@
 
 
                         <!-- job description right side content -->
-                        <div class="w-full activeSideJobDesc">
+                        <div class="w-full activeSideJobDesc" id="job-desc-1">
 
                             <!-- <div class="hidden lg:flex pl-2  relative w-full"> -->
                             <div class="fixed p-2 right-20 bg-white h-3/4 overflow-y-scroll border ">
-                                <button type="button" class=" ms-auto -mx-1.5 -my-1.5 bg-blue-100  justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6 mt-2 descBackButton" data-dismiss-target="#dropdown-cta1" aria-label="Close">
-                                    
-                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
-                                      </svg>
-                                      
+                                <button type="button"
+                                    class=" ms-auto -mx-1.5 -my-1.5 bg-blue-100  justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6 mt-2 descBackButton"
+                                    aria-label="Close" onclick="closeJobDesc('1')">
+
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" width="24"
+                                        height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                                    </svg>
+
                                 </button>
 
                                 <div class=" relative  pt-2">
@@ -572,12 +615,12 @@
                                         KNS Technologies
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-blue-500">
                                         <i class="fa fa-map-marker mr-1" aria-hidden="true"></i><span>Bengaluru,
                                             Karnataka, India</span>
                                     </p>
 
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-yellow-700">
                                         <i class="fa fa-suitcase mr-1" aria-hidden="true"></i><kbd>Remote</kbd> .
                                         <kbd>Remote</kbd>
 
@@ -586,12 +629,13 @@
                                     <p class="mb-1 text-base text-green-600">
                                         <i class="fa fa-check-circle-o mr-1" aria-hidden="true"></i><span>Applied</span>
                                     </p>
-                                    <p class="mb-1 text-base text-gray-600">
+                                    <p class="mb-1 text-base text-red-600">
                                         <i class="fa fa-clock-o mr-1" aria-hidden="true"></i><span>5 Hours Ago</span>
                                     </p>
-                                    <button 
+                                    <button
                                         class="text-white userBtn1 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
-                                        name="apply_button" id="apply_button">Apply Now
+                                        name="apply_button" id="apply_button" data-modal-target="editUserModal"
+                                        data-modal-show="editUserModal">Apply Now
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2" class="w-7 h-4 me-2"
                                             viewBox="0 0 24 24">
@@ -661,8 +705,8 @@
                                 </div>
 
 
-                                <button 
-                                    class="text-white userBtn2 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
+                                <button
+                                    class="text-white userBtn1 font-medium rounded text-base p-2 text-center inline-flex items-center me-2 my-4 "
                                     name="apply_button" id="apply_button">Apply Now
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2" class="w-7 h-4 me-2"
@@ -675,7 +719,115 @@
                             <!-- </div> -->
                         </div>
 
+                        <!-- User Edit Modal toggle -->
 
+                        <div id="editUserModal" data-modal-placement="top-center" tabindex="-1"
+                            class="fixed top-0 left-0 right-0 z-50  hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(50%-1rem)] ">
+                            <div class="relative w-2/4 ">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded shadow ">
+                                    <!-- Modal header -->
+                                    <div
+                                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t popup_header">
+                                        <h3 class="text-lg font-medium text-white ">
+                                            Java Developer only (W2)
+                                        </h3>
+                                        <button type="button"
+                                            class="text-gray-400 bg-transparent bg-white hover:bg-gray-200 hover:text-black rounded text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
+                                            data-modal-hide="editUserModal">
+                                            <svg class="w-3 h-3" aria-hidden="true" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <div id="apply-popup">
+                                            <div class="text-center">
+                                                <p class="block mb-2 text-base font-medium text-black " id="name">We
+                                                    didn't found any consultants / resumes</p>
+                                                <p class="block mb-2 text-base text-black ">Click <a
+                                                        href="resumeadd.html"
+                                                        class="hover:underline font-medium  text-red-600">Hear to add
+                                                        resume.</a></p>
+
+                                            </div>
+
+                                            <div class="overflow-x-auto">
+
+                                                <p class="block mb-2 text-base text-black text-center bg-yellow-200">
+                                                    Please select at least one consultant / resume (Max three).</p>
+
+                                                <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                                                    <thead class="text-xs text-white uppercase bg-gray-800  ">
+                                                        <tr>
+                                                            <th scope="col" class="px-3 py-2">
+                                                                Name
+                                                            </th>
+                                                            <th scope="col" class="px-3 py-2">
+                                                                Title
+                                                            </th>
+                                                            <th scope="col" class="px-3 py-2">
+                                                                Resume
+                                                            </th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr
+                                                            class="hover:bg-gray-200 odd:bg-white  even:bg-gray-50  border-b ">
+                                                            <td class="px-3 py-2">
+
+
+                                                                <input id="demo" aria-describedby="demo-text" type="checkbox" value="" class="w-3 h-3 text-blue-600  border-gray-500 rounded focus:ring-blue-500 focus:ring-0">
+                                                                Anshuman Bharatiya
+                                                            </td>
+                                                            <td class="px-3 py-2">
+                                                                JAVA Developer
+                                                            </td>
+                                                            <td class="px-3 py-2">
+                                                                Akash_Resume.pdf
+                                                            </td>
+
+                                                        </tr>
+
+                                                        <tr
+                                                            class="">
+                                                            <td class="">
+                                                            </td>
+                                                            <td class="">
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <button
+                                                                class="text-white userBtn1 font-medium rounded text-base px-4 py-2 text-center inline-flex items-center mt-2 "
+                                                                name="pop_apply_button" id="pop_apply_button" >Apply Now
+                                                               
+                                                            </button>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
 
 
                     </div>

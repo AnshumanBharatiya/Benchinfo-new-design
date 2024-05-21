@@ -54,5 +54,50 @@ if (document.getElementById('relocation')) {
     VirtualSelect.init({ ele: '#relocation' });
 }
 
-// ckeditor
-var editor = CKEDITOR.replace( 'jobDescription' );
+
+if (document.getElementById('jobDescription')) {
+    // ckeditor
+    var editor = CKEDITOR.replace( 'jobDescription' );
+}
+
+
+//  job Description popup
+
+function openJobDesc(id){
+    let jobDescElement = document.getElementById('job-desc-' + id);
+    jobDescElement.classList.add('mobile');
+}
+
+function closeJobDesc(id){
+  
+    let jobDescElement = document.getElementById('job-desc-' + id);
+    jobDescElement.classList.remove('mobile');
+}
+
+function closeDropdown(event){
+    event.stopPropagation();
+}
+
+function displayError(error_msg){
+    document.getElementById("errormsg").innerHTML = error_msg;
+    document.getElementById("emessage").style.display = 'flex';
+    
+    setTimeout(function() {
+        document.getElementById("emessage").style.display = 'none';
+    }, 5000);
+}
+
+function closeError(){
+    document.getElementById("emessage").style.display = 'none';
+}
+
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    
+    let common_text = document.getElementById('common_text').value;
+    if(common_text.length < 1){
+        displayError("Please Enter Job Name");
+    }
+
+});
